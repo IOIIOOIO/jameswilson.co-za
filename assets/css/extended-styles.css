@@ -54,7 +54,7 @@ div.arrowDown{
 }
 
 .main section.landingPage {
-  background: url('http://jameswilson.co.za/assets/img/backgrounds/bg_landing.jpg') no-repeat center; 
+  background: url('https://ioiiooio.github.io/jameswilson.co.za/assets/img/backgrounds/bg_landing.jpg') no-repeat center; 
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -62,7 +62,7 @@ div.arrowDown{
   height: 100%;
 }
 .main section.jobPage {
-  background: url('http://jameswilson.co.za/assets/img/backgrounds/bg-presentation.jpg') no-repeat center;
+  background: url('https://ioiiooio.github.io/jameswilson.co.za/assets/img/backgrounds/bg-presentation.jpg') no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -190,7 +190,7 @@ img.work_piece {
   max-height: 100%;
 }
 .main section.aboutPage {
-  background: url('http://jameswilson.co.za/assets/img/backgrounds/bg_about.png') no-repeat center; 
+  background: url('https://ioiiooio.github.io/jameswilson.co.za/assets/img/backgrounds/bg_about.png') no-repeat center; 
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -264,7 +264,7 @@ width: 100%;
 }
 
 .main section.footerPage {
-  background: url('http://jameswilson.co.za/assets/img/backgrounds/bg_footer.jpg') no-repeat center; 
+  background: url('https://ioiiooio.github.io/jameswilson.co.za/assets/img/backgrounds/bg_footer.jpg') no-repeat center; 
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -334,11 +334,11 @@ ul.programs-list {
 }
 @font-face {
   font-family: 'icomoon';
-  src:url('http://jameswilson.co.za/assets/plugins/icomoon/icomoon.eot?-eyos59');
-  src:url('http://jameswilson.co.za/assets/plugins/icomoon/icomoon.eot?#iefix-eyos59') format('embedded-opentype'),
-    url('http://jameswilson.co.za/assets/plugins/icomoon/icomoon.ttf?-eyos59') format('truetype'),
-    url('http://jameswilson.co.za/assets/plugins/icomoon/icomoon.woff?-eyos59') format('woff'),
-    url('http://jameswilson.co.za/assets/plugins/icomoon/icomoon.svg?-eyos59#icomoon') format('svg');
+  src:url('https://ioiiooio.github.io/jameswilson.co.za/assets/plugins/icomoon/icomoon.eot?-eyos59');
+  src:url('https://ioiiooio.github.io/jameswilson.co.za/assets/plugins/icomoon/icomoon.eot?#iefix-eyos59') format('embedded-opentype'),
+    url('https://ioiiooio.github.io/jameswilson.co.za/assets/plugins/icomoon/icomoon.ttf?-eyos59') format('truetype'),
+    url('https://ioiiooio.github.io/jameswilson.co.za/assets/plugins/icomoon/icomoon.woff?-eyos59') format('woff'),
+    url('https://ioiiooio.github.io/jameswilson.co.za/assets/plugins/icomoon/icomoon.svg?-eyos59#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
