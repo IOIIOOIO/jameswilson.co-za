@@ -1,0 +1,31 @@
+{
+  "name": "jameswilson.co.za",
+  "version": "2.0.0",
+  "description": "Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IOIIOOIO/jameswilson.co.za.git"
+  },
+  "keywords": [
+    "portfolio",
+    "web",
+    "designer",
+    "graphic",
+    "designer",
+    "web",
+    "developer"
+  ],
+  "author": "James Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IOIIOOIO/jameswilson.co.za/issues"
+  },
+  "homepage": "https://github.com/IOIIOOIO/jameswilson.co.za#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
