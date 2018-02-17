@@ -20,7 +20,6 @@
   <link rel="apple-touch-icon" sizes="144x144" href="./apple-touch-icon-144x144.png" />
   <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon-152x152.png" />
 
-
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
@@ -33,6 +32,7 @@
   <link href="./assets/plugins/slick-carousel/slick-theme.css" rel="stylesheet" type="text/css">
   <link href="./assets/css/styles.css" rel="stylesheet" type="text/css">
   <link href="./assets/css/extended-styles.css" rel="stylesheet" type="text/css">
+  <link href="./assets/css/slideshow.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -42,185 +42,64 @@
       <!-- Landing Page -->
       <section class="landingPage">
         <h1 class="text3d">Hello<br/>World</h1>
-        <h2>
-          welcome to my portfolio
-        </h2>
+        <h2>welcome to my portfolio</h2>
       </section>
       <!-- Compulutions Section -->
       <section class="jobPage">
-        <div class="page_container">
-          <div class="work_showcase">
-            <!-- Compulutions Slide 1 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Compulutions</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">March 2015 - Current</h2>
-                </div>
+
+          <article class='slideshow'>
+              <header class='slide-header'>
+                <h1 class='slide-header__main'>World Industries</h1>
+                <h2 class='slide-header__sub'>2017-2018</h2>
+              </header>
+              <input checked='checked' class='thumbnail-radio' id='thumbnail-radio-1' name='thumbnails' type='radio'>
+              <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-radio-1' style='background-image: url(http://via.placeholder.com/1297x800)'>
+                Thumbnail label
+                <span class='direction-hover__right' data-label='Thumbnail label'></span>
+                <span class='direction-hover__left' data-label='Thumbnail label'></span>
+                <span class='direction-hover__top' data-label='Thumbnail label'></span>
+                <span class='direction-hover__bottom' data-label='Thumbnail label'></span>
+                <span class='direction-hover__center' data-label='Thumbnail label'></span>
+              </label>
+              <input class='thumbnail-radio' id='thumbnail-radio-2' name='thumbnails' type='radio'>
+              <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-radio-2' style='background-image: url(http://via.placeholder.com/1135x700)'>
+                Thumbnail label
+                <span class='direction-hover__right' data-label='Thumbnail label'></span>
+                <span class='direction-hover__left' data-label='Thumbnail label'></span>
+                <span class='direction-hover__top' data-label='Thumbnail label'></span>
+                <span class='direction-hover__bottom' data-label='Thumbnail label'></span>
+                <span class='direction-hover__center' data-label='Thumbnail label'></span>
+              </label>
+              <input class='thumbnail-radio' id='thumbnail-radio-3' name='thumbnails' type='radio'>
+              <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-radio-3' style='background-image: url(http://via.placeholder.com/973x600)'>
+                Thumbnail label
+                <span class='direction-hover__right' data-label='Thumbnail label'></span>
+                <span class='direction-hover__left' data-label='Thumbnail label'></span>
+                <span class='direction-hover__top' data-label='Thumbnail label'></span>
+                <span class='direction-hover__bottom' data-label='Thumbnail label'></span>
+                <span class='direction-hover__center' data-label='Thumbnail label'></span>
+              </label>
+              <input class='thumbnail-radio' id='thumbnail-radio-4' name='thumbnails' type='radio'>
+              <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-radio-4' style='background-image: url(http://via.placeholder.com/810x500)'>
+                Thumbnail label
+                <span class='direction-hover__right' data-label='Thumbnail label'></span>
+                <span class='direction-hover__left' data-label='Thumbnail label'></span>
+                <span class='direction-hover__top' data-label='Thumbnail label'></span>
+                <span class='direction-hover__bottom' data-label='Thumbnail label'></span>
+                <span class='direction-hover__center' data-label='Thumbnail label'></span>
+              </label>
+              <img class='main-image' id='main-image-1' src='http://via.placeholder.com/1297x800'>
+              <img class='main-image' id='main-image-2' src='http://via.placeholder.com/1135x700'>
+              <img class='main-image' id='main-image-3' src='http://via.placeholder.com/973x600'>
+              <img class='main-image' id='main-image-4' src='http://via.placeholder.com/810x500'>
+              <div class='description' id='js-slide'>
+                <p class='description__slide'>
+                  Lorem ipsum dolor sit amet, in doming impedit sensibus quo, erant facete viderer te cum, pro assentior sadipscing no. Oratio adversarium eum at, explicari aliquando at pri. Enim quando vel in.
+                </p>
               </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/compulutions/compulutions.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-12 text-center">
-                  <p style="text-align: center">Compulutions (Pty) Ltd is a web development company started by my friend
-                    <a href="http://craigvantonder.co.za/">Craig Van Tonder</a>. He had a growing need for a graphic designer who could move into front-end development.
-                    I am responsible for all Compulutions designs right down to the company logo.
-                    <br/>
-                    <a href="http://compulutions.co.za/" target="_blank">Visit compulutions.co.za</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Compulutions Slide 2 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Compulutions</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">March 2015 - Current</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/compulutions/freight-rush.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Graphic Design</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>Design a logo for newly established company called "Freight Rush". It was an instant hit with our client
-                    and I regard it as my most successful logo design. It's my personal favourite for its versatility and
-                    iconic appeal.</p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Compulutions Slide 3 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Compulutions</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">March 2015 - Current</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/compulutions/lcom.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Graphic design</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>Revamp the LCOM Communications brand. For LCOM I created a brand identity that attracted attention and
-                    was easily recognisable. A key goal I had in mind was to make them appear friendly and trustworthy.
-                    <a href="http://www.lcom.co.za/" target="_blank">Visit lcom.co.za</a>
-                  </p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Compulutions Slide 4 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Compulutions</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">March 2015 - Current</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/compulutions/nexgen.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Graphic design.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>NexgenSA is a growing company that needed an updated look. They provide services for small to large businesses
-                    so I aimed to create a universal and timeless corporate identity that would give them credibility as
-                    professionals.
-                  </p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Compulutions Slide 5 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Compulutions</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">March 2015 - Current</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/compulutions/androidgadgets.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Design in-house marketing materials.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>Presentation is key to marketing the services provided by Compulutions. I set out to design a template
-                    format that was instantly recognisable and easy to adjust for a variety of scenarios.
-                    <a href="https://www.facebook.com/compulutions" target="_blank">Visit facebook.com/compulutions</a>
-                  </p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            </article>
+
+
       </section>
       <!-- Yesman Section -->
       <section class="jobPage">

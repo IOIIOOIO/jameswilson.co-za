@@ -28,7 +28,7 @@ body {
 h1,
 h2,
 h3 {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.7);
   font-family: 'Source Sans Pro', helvetica, arial, sans-serif;
 }
 
@@ -73,6 +73,13 @@ div.arrowDown {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px 30px;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding: 0;
+  }
 }
 
 .main section.landingPage {
@@ -122,6 +129,7 @@ div.arrowDown {
   font-weight: 500;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .75);
   font-family: 'lato', helvetica, arial, sans-serif;
+  letter-spacing: .5rem;
 }
 
 .slick-slider {
@@ -235,7 +243,6 @@ img.work_piece {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
 }
 
 @media( min-width: 1200px) {
