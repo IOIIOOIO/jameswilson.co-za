@@ -38,7 +38,7 @@
 
 <body>
   <div class="wrapper">
-    <h1 class="main">
+    <div class="main">
       <!-- Landing Page -->
       <section class="landingPage">
         <h1 class="text3d">Hello<br/>World</h1>
@@ -820,109 +820,86 @@
       </section>
       <!-- About Me Page -->
       <section class="aboutPage">
-        <div class="page_container">
-          <div class="row about">
-            <div class="col-sm-6 proficiencies">
-              <h1>Proficiencies</h1>
-              <div class="row">
-                <div class="col-xs-1 col-sm-1 proficiency_icons">
-                  <object type="image/svg+xml" data="./assets/img/program-icons/illustrator.svg" alt="Adobe Illustrator">
-                    <img src="./assets/img/program-icons/svg-fallback/illustrator.png" title="Adobe Illustrator">
-                  </object>
+        <div class="col-lg-8 about">
+          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 proficiencies">
+            <h1>Proficiencies</h1>
+            <ul class="proficiency-stats">
+              <li class="proficiency-stats__stat">
+                <object class="proficiency-stats__icon" type="image/svg+xml" data="./assets/img/program-icons/illustrator.svg" alt="Adobe Illustrator">
+                  <img src="./assets/img/program-icons/svg-fallback/illustrator.png" title="Adobe Illustrator">
+                </object>
+                <div class="proficiency-stats__bar" id="progressBarAI">
+                  <div></div>
                 </div>
-                <div class="col-xs-12 col-sm-10">
-                  <div id="progressBarAI">
-                    <div></div>
-                  </div>
-                </div>
-              </div>
+              </li>
 
-              <div class="row">
-                <div class="col-xs-1 col-sm-1 proficiency_icons">
-                  <object type="image/svg+xml" data="./assets/img/program-icons/photoshop.svg">
-                    <img src="./assets/img/program-icons/svg-fallback/photoshop.png" title="Adobe Photoshop">
-                  </object>
+              <li class="proficiency-stats__stat">
+                <object class="proficiency-stats__icon" type="image/svg+xml" data="./assets/img/program-icons/photoshop.svg">
+                  <img src="./assets/img/program-icons/svg-fallback/photoshop.png" title="Adobe Photoshop">
+                </object>
+                <div class="proficiency-stats__bar" id="progressBarPS">
+                  <div></div>
                 </div>
-                <div class="col-xs-11 col-sm-10">
-                  <div id="progressBarPS">
-                    <div></div>
-                  </div>
-                </div>
-              </div>
+              </li>
 
-              <div class="row">
-                <div class="col-xs-1 col-sm-1 proficiency_icons">
-                  <object type="image/svg+xml" data="./assets/img/program-icons/indesign.svg">
-                    <img src="./assets/img/program-icons/svg-fallback/indesign.png" title="Adobe InDesign">
-                  </object>
+              <li class="proficiency-stats__stat">
+                <object class="proficiency-stats__icon" type="image/svg+xml" data="./assets/img/program-icons/indesign.svg">
+                  <img src="./assets/img/program-icons/svg-fallback/indesign.png" title="Adobe InDesign">
+                </object>
+                <div class="proficiency-stats__bar" id="progressBarID">
+                  <div></div>
                 </div>
-                <div class="col-xs-11 col-sm-10">
-                  <div id="progressBarID">
-                    <div></div>
-                  </div>
+              </li>
+
+              <li class="proficiency-stats__stat">
+                <object class="proficiency-stats__icon" type="image/svg+xml" data="./assets/img/program-icons/sketchup.svg">
+                  <img src="./assets/img/program-icons/svg-fallback/sketchup.png" title="Sketchup">
+                </object>
+                <div class="proficiency-stats__bar" id="progressBarSKP">
+                  <div></div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-1 col-sm-1 proficiency_icons">
-                  <object type="image/svg+xml" data="./assets/img/program-icons/sketchup.svg">
-                    <img src="./assets/img/program-icons/svg-fallback/sketchup.png" title="Sketchup">
-                  </object>
+              </li>
+
+              <li class="proficiency-stats__stat">
+                <object class="proficiency-stats__icon" type="image/svg+xml" data="./assets/img/program-icons/html.svg">
+                  <img src="./assets/img/program-icons/svg-fallback/html.png" title="HTML5">
+                </object>
+                <div class="proficiency-stats__bar" id="progressBarHTML">
+                  <div></div>
                 </div>
-                <div class="col-xs-11 col-sm-10">
-                  <div id="progressBarSKP">
-                    <div></div>
-                  </div>
+              </li>
+
+              <li class="proficiency-stats__stat">
+                <object class="proficiency-stats__icon" type="image/svg+xml" data="./assets/img/program-icons/css.svg">
+                  <img src="./assets/img/program-icons/svg-fallback/css.png" title="CSS3">
+                </object>
+                <div class="proficiency-stats__bar" id="progressBarCSS">
+                  <div></div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-1 col-sm-1 proficiency_icons">
-                  <object type="image/svg+xml" data="./assets/img/program-icons/html.svg">
-                    <img src="./assets/img/program-icons/svg-fallback/html.png" title="HTML5">
-                  </object>
-                </div>
-                <div class="col-xs-11 col-sm-10">
-                  <div id="progressBarHTML">
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-1 col-sm-1 proficiency_icons">
-                  <object type="image/svg+xml" data="./assets/img/program-icons/css.svg">
-                    <img src="./assets/img/program-icons/svg-fallback/css.png" title="CSS3">
-                  </object>
-                </div>
-                <div class="col-xs-11 col-sm-10">
-                  <div id="progressBarCSS">
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 aboutMe">
-              <h1>About Me</h1>
-              <div class="col-sm-12">
-                <p>My name is James Wilson, I'm a graphic designer with one year's experience in the clothing industry and seven
-                  years' in the print industry. My first job before pursuing a career in graphic design was working for my
-                  brother in carpentry. He designs and manufactures
-                  <a href="http://www.designindaba.com/profiles/skog-kids">award-winning</a> furniture and I am grateful for my formative years spent with him as I learnt the value
-                  of exceptional workmanship. Throughout my career I have always gone the extra mile and it's through my
-                  efforts and hard work ethic that I earned the respect of my colleagues and became the leader of a world-class
-                  printing department at
-                  <a href="http://yesman.co.za/">Yesman</a>. I enjoy creating brands and find great reward in creating something that hits the mark for
-                  the client in more ways than one. I have a passion for all things creative, so when I'm not working hard
-                  to make the world more beautiful you can find me spending endless hours on the internet either reading
-                  or admiring awesome designs. My favourite sites are:
-                  <a href="http://www.smashingmagazine.com/" target="_blank">smashingmagazine.com</a> |
-                  <a href="http://www.visualnews.com/" target="_blank">visualnews.com</a> |
-                  <a href="http://www.thisiscolossal.com/" target="_blank">thisiscolossal.com</a> and sometimes just for fun:
-                  <a href="http://manbabies.com/" target="_blank">manbabies.com</a>
-                </p>
-                <p>For a detailed CV please e-mail me at:
-                  <a class="emailLink" href="mailto:hello@jameswilson.co.za">hello@jameswilson.co.za</a>
-                </p>
-              </div>
-            </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 aboutMe">
+            <h1>About Me</h1>
+            <p class="aboutMe__story">My name is James Wilson, I'm a graphic designer with one year's experience in the clothing industry and seven
+              years' in the print industry. My first job before pursuing a career in graphic design was working for my brother
+              in carpentry. He designs and manufactures
+              <a href="http://www.designindaba.com/profiles/skog-kids">award-winning</a> furniture and I am grateful for my formative years spent with him as I learnt the value of
+              exceptional workmanship. Throughout my career I have always gone the extra mile and it's through my efforts
+              and hard work ethic that I earned the respect of my colleagues and became the leader of a world-class printing
+              department at
+              <a href="http://yesman.co.za/">Yesman</a>. I enjoy creating brands and find great reward in creating something that hits the mark for the
+              client in more ways than one. I have a passion for all things creative, so when I'm not working hard to make
+              the world more beautiful you can find me spending endless hours on the internet either reading or admiring
+              awesome designs. My favourite sites are:
+              <a href="http://www.smashingmagazine.com/" target="_blank">smashingmagazine.com</a> |
+              <a href="http://www.visualnews.com/" target="_blank">visualnews.com</a> |
+              <a href="http://www.thisiscolossal.com/" target="_blank">thisiscolossal.com</a> and sometimes just for fun:
+              <a href="http://manbabies.com/" target="_blank">manbabies.com</a>
+            </p>
+            <p class="aboutMe__story">For a detailed CV please e-mail me at:
+              <a class="emailLink" href="mailto:hello@jameswilson.co.za">hello@jameswilson.co.za</a>
+            </p>
           </div>
         </div>
       </section>
@@ -930,8 +907,7 @@
       <section class="footerPage">
         <h1 class="text3d">
           Thanks For
-          <br/>
-          Visiting
+          <br/> Visiting
         </h1>
         <span class="icon-smiley text3d"></span>
         <img class="hidden-xs hidden-sm doughnut" src="./assets/img/backgrounds/doughnut.png" />
@@ -946,7 +922,6 @@
           </div>
         </div>
       </section>
-
     </div>
   </div>
   <!-- SCRIPTS -->
@@ -978,7 +953,7 @@
       /* One Page Scroller */
       $(".main").onepage_scroll({
         sectionContainer: "section",
-        responsiveFallback: 600,
+        responsiveFallback: 1200,
         loop: true
       });
       /* Slick Carsousel */
