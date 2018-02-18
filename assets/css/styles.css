@@ -174,11 +174,11 @@ html {
       overflow: hidden;
     }
     
-    .main section > img {
+    /* .main section > img {
       position: absolute;
       max-width: 100%;
       z-index: 1;
-    }
+    } */
     
     .main section .page_container .btns {
       clear: both;

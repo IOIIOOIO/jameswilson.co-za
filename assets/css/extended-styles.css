@@ -375,8 +375,20 @@ img.work_piece {
   }
 }
 
-.main section.footerPage .icon-smiley {
-  font-size: 10vw;
+.icon-smiley {
+  width: 18vw;
+}
+
+@media(min-width:768px) {
+  .icon-smiley {
+    width: 12vw;
+  }
+}
+
+@media(min-width:1200px) {
+  .icon-smiley {
+    width: 10vw;
+  }
 }
 
 .main section.footerPage img.doughnut {
@@ -398,7 +410,6 @@ img.work_piece {
   margin: 0;
   font-size: .75em;
   color: rgba(255, 255, 255, .3);
-  font-family: 'Inconsolata', 'lato', helvetica, arial, sans-serif;
 }
 
 .footerCopyright a {
@@ -461,10 +472,6 @@ ul.programs-list {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-smiley:before {
-  content: "\e60c";
 }
 
 .emailLink {
