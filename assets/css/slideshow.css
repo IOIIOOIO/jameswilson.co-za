@@ -146,10 +146,31 @@
             display: unset;
             opacity: 0;
         }
-        .thumbnail-radio#thumbnail-radio-1:checked~.thumbnail-1,
-        .thumbnail-radio#thumbnail-radio-2:checked~.thumbnail-2,
-        .thumbnail-radio#thumbnail-radio-3:checked~.thumbnail-3,
-        .thumbnail-radio#thumbnail-radio-4:checked~.thumbnail-4 {
+        /* mapstudio */
+        .thumbnail-radio#thumbnail-ms-1:checked~.thumbnail-1,
+        .thumbnail-radio#thumbnail-ms-2:checked~.thumbnail-2,
+        .thumbnail-radio#thumbnail-ms-3:checked~.thumbnail-3,
+        .thumbnail-radio#thumbnail-ms-4:checked~.thumbnail-4,
+        /* Compulutions */
+        .thumbnail-radio#thumbnail-com-1:checked~.thumbnail-1,
+        .thumbnail-radio#thumbnail-com-2:checked~.thumbnail-2,
+        .thumbnail-radio#thumbnail-com-3:checked~.thumbnail-3,
+        .thumbnail-radio#thumbnail-com-4:checked~.thumbnail-4,
+        /* Yesman */
+        .thumbnail-radio#thumbnail-ym-1:checked~.thumbnail-1,
+        .thumbnail-radio#thumbnail-ym-2:checked~.thumbnail-2,
+        .thumbnail-radio#thumbnail-ym-3:checked~.thumbnail-3,
+        .thumbnail-radio#thumbnail-ym-4:checked~.thumbnail-4,
+        /* Hillcrest Signs */
+        .thumbnail-radio#thumbnail-hs-1:checked~.thumbnail-1,
+        .thumbnail-radio#thumbnail-hs-2:checked~.thumbnail-2,
+        .thumbnail-radio#thumbnail-hs-3:checked~.thumbnail-3,
+        .thumbnail-radio#thumbnail-hs-4:checked~.thumbnail-4,
+        /* Anupi */
+        .thumbnail-radio#thumbnail-anu-1:checked~.thumbnail-1,
+        .thumbnail-radio#thumbnail-anu-2:checked~.thumbnail-2,
+        .thumbnail-radio#thumbnail-anu-3:checked~.thumbnail-3,
+        .thumbnail-radio#thumbnail-anu-4:checked~.thumbnail-4 {
             -webkit-transform: translateZ(var(--perspective-depth));
             transform: translateZ(var(--perspective-depth));
             -webkit-box-shadow: -8px 4px 8px 2px rgba(0, 0, 0, .15);
@@ -161,18 +182,60 @@
             transition: transform 200ms ease-out;
             transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
         }
-        .thumbnail-radio#thumbnail-radio-1:checked~.thumbnail-1::before,
-        .thumbnail-radio#thumbnail-radio-2:checked~.thumbnail-2::before,
-        .thumbnail-radio#thumbnail-radio-3:checked~.thumbnail-3::before,
-        .thumbnail-radio#thumbnail-radio-4:checked~.thumbnail-4::before {
+        /* mapstudio */
+        .thumbnail-radio#thumbnail-ms-1:checked~.thumbnail-1::before,
+        .thumbnail-radio#thumbnail-ms-2:checked~.thumbnail-2::before,
+        .thumbnail-radio#thumbnail-ms-3:checked~.thumbnail-3::before,
+        .thumbnail-radio#thumbnail-ms-4:checked~.thumbnail-4::before,
+        /* compulutions */
+        .thumbnail-radio#thumbnail-com-1:checked~.thumbnail-1::before,
+        .thumbnail-radio#thumbnail-com-2:checked~.thumbnail-2::before,
+        .thumbnail-radio#thumbnail-com-3:checked~.thumbnail-3::before,
+        .thumbnail-radio#thumbnail-com-4:checked~.thumbnail-4::before,
+        /* Yesman */
+        .thumbnail-radio#thumbnail-ym-1:checked~.thumbnail-1::before,
+        .thumbnail-radio#thumbnail-ym-2:checked~.thumbnail-2::before,
+        .thumbnail-radio#thumbnail-ym-3:checked~.thumbnail-3::before,
+        .thumbnail-radio#thumbnail-ym-4:checked~.thumbnail-4::before,
+        /* Hillcrest Signs */
+        .thumbnail-radio#thumbnail-hs-1:checked~.thumbnail-1::before,
+        .thumbnail-radio#thumbnail-hs-2:checked~.thumbnail-2::before,
+        .thumbnail-radio#thumbnail-hs-3:checked~.thumbnail-3::before,
+        .thumbnail-radio#thumbnail-hs-4:checked~.thumbnail-4::before,
+        /* Anupi */
+        .thumbnail-radio#thumbnail-anu-1:checked~.thumbnail-1::before,
+        .thumbnail-radio#thumbnail-anu-2:checked~.thumbnail-2::before,
+        .thumbnail-radio#thumbnail-anu-3:checked~.thumbnail-3::before,
+        .thumbnail-radio#thumbnail-anu-4:checked~.thumbnail-4::before {
             -webkit-transform: translateZ(var(--perspective-depth));
             transform: translateZ(var(--perspective-depth));
             opacity: 0.5;
         }
-        .thumbnail-radio#thumbnail-radio-1:checked~#main-image-1,
-        .thumbnail-radio#thumbnail-radio-2:checked~#main-image-2,
-        .thumbnail-radio#thumbnail-radio-3:checked~#main-image-3,
-        .thumbnail-radio#thumbnail-radio-4:checked~#main-image-4 {
+        /* mapstudio */
+        .thumbnail-radio#thumbnail-ms-1:checked~#main-ms-1,
+        .thumbnail-radio#thumbnail-ms-2:checked~#main-ms-2,
+        .thumbnail-radio#thumbnail-ms-3:checked~#main-ms-3,
+        .thumbnail-radio#thumbnail-ms-4:checked~#main-ms-4,
+        /* compulutions */
+        .thumbnail-radio#thumbnail-com-1:checked~#main-com-1,
+        .thumbnail-radio#thumbnail-com-2:checked~#main-com-2,
+        .thumbnail-radio#thumbnail-com-3:checked~#main-com-3,
+        .thumbnail-radio#thumbnail-com-4:checked~#main-com-4,
+        /* yesman */
+        .thumbnail-radio#thumbnail-ym-1:checked~#main-ym-1,
+        .thumbnail-radio#thumbnail-ym-2:checked~#main-ym-2,
+        .thumbnail-radio#thumbnail-ym-3:checked~#main-ym-3,
+        .thumbnail-radio#thumbnail-ym-4:checked~#main-ym-4,
+        /* hillcrest signs */
+        .thumbnail-radio#thumbnail-hs-1:checked~#main-hs-1,
+        .thumbnail-radio#thumbnail-hs-2:checked~#main-hs-2,
+        .thumbnail-radio#thumbnail-hs-3:checked~#main-hs-3,
+        .thumbnail-radio#thumbnail-hs-4:checked~#main-hs-4,
+        /* anupi */
+        .thumbnail-radio#thumbnail-anu-1:checked~#main-anu-1,
+        .thumbnail-radio#thumbnail-anu-2:checked~#main-anu-2,
+        .thumbnail-radio#thumbnail-anu-3:checked~#main-anu-3,
+        .thumbnail-radio#thumbnail-anu-4:checked~#main-anu-4 {
             display: block;
             -webkit-box-shadow: 6px 4px 8px 0px rgba(0, 0, 0, .13);
             box-shadow: 6px 4px 8px 0px rgba(0, 0, 0, .13);
@@ -273,7 +336,7 @@
     transition: transform 300ms ease-out;
     transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
     background-color: white;
-    opacity: 0.6;
+    opacity: 0.8;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
 }
@@ -304,7 +367,8 @@
     left: 0;
     padding-bottom: 4px;
     font-size: 0.875rem;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
     -webkit-transition: -webkit-transform 450ms ease-out;
     transition: -webkit-transform 450ms ease-out;
     transition: transform 450ms ease-out;
@@ -372,7 +436,7 @@
     transition: transform 300ms ease-out;
     transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
     background-color: white;
-    opacity: 0.6;
+    opacity: 0.8;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
 }
@@ -403,7 +467,8 @@
     left: 0;
     padding-bottom: 4px;
     font-size: 0.875rem;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
     -webkit-transition: -webkit-transform 450ms ease-out;
     transition: -webkit-transform 450ms ease-out;
     transition: transform 450ms ease-out;
@@ -470,7 +535,7 @@
     transition: transform 300ms ease-out;
     transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
     background-color: white;
-    opacity: 0.6;
+    opacity: 0.8;
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
 }
@@ -501,7 +566,8 @@
     left: 0;
     padding-bottom: 4px;
     font-size: 0.875rem;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
     -webkit-transition: -webkit-transform 450ms ease-out;
     transition: -webkit-transform 450ms ease-out;
     transition: transform 450ms ease-out;
@@ -569,7 +635,7 @@
     transition: transform 300ms ease-out;
     transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
     background-color: white;
-    opacity: 0.6;
+    opacity: 0.8;
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
 }
@@ -600,7 +666,8 @@
     left: 0;
     padding-bottom: 4px;
     font-size: 0.875rem;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
     -webkit-transition: -webkit-transform 450ms ease-out;
     transition: -webkit-transform 450ms ease-out;
     transition: transform 450ms ease-out;
@@ -675,10 +742,31 @@
         }
     }
     @media (min-width: 1200px) {
-        #main-image-1,
-        #main-image-2,
-        #main-image-3,
-        #main-image-4 {
+        /* mapstudio */
+        #main-ms-1,
+        #main-ms-2,
+        #main-ms-3,
+        #main-ms-4,
+        /* compulutions */
+        #main-com-1,
+        #main-com-2,
+        #main-com-3,
+        #main-com-4,
+        /* yesman */
+        #main-ym-1,
+        #main-ym-2,
+        #main-ym-3,
+        #main-ym-4,
+        /* hillcrest signs */
+        #main-hs-1,
+        #main-hs-2,
+        #main-hs-3,
+        #main-hs-4,
+        /* anupi */
+        #main-anu-1,
+        #main-anu-2,
+        #main-anu-3,
+        #main-anu-4 {
             display: none;
         }
     }
