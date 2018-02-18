@@ -30,8 +30,7 @@
 
 .slide-header {
     display: flex;
-    align-items: baseline;
-    color: rgba(0, 0, 0, 0.6);
+    align-items: center;
     margin-bottom: 0.6vw;
     flex-direction: column;
 }
@@ -39,6 +38,7 @@
 @media (min-width: 768px) {
     .slide-header {
         flex-direction: row;
+        align-items: baseline;
         justify-content: space-between;
     }
 }
@@ -51,63 +51,38 @@
     }
 }
 
-.slide-header__main {
-    margin: 0;
-    font-size: 3rem;
-    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    font-weight: 600;
-    line-height: 52px;
-    line-height: 3.25rem;
-}
-
-@media (min-width: 768px) {
-    .slide-header__main {
-        line-height: 3.9vw;
-    }
-}
-
-@media (min-width: 1200px) {
-    .slide-header__main {
-        font-size: 4vw;
-    }
-}
-
-@media (min-width: 1600px) {
-    .slide-header__main {
-        font-size: 3.2vw;
-    }
-}
-
-.slide-header__sub {
-    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    font-size: 1.75rem;
-    font-weight: 500;
-}
-
-@media (min-width: 768px) {
-    .slide-header__sub {
-        margin-left: 1.2vw;
-    }
-}
-
-@media (min-width: 1200px) {
-    .slide-header__sub {
-        font-size: 2.33vw;
-    }
-}
-
-@media (min-width: 1600px) {
-    .slide-header__sub {
-        font-size: 1.9vw;
-    }
-}
-
 @supports (display: grid) {
     @media (min-width: 1200px) {
         .slide-header {
             grid-area: header;
             justify-content: flex-start;
         }
+    }
+}
+
+.slide-header__main {
+    margin: 0;
+    line-height: 3.25rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .slide-header__main {
+        line-height: 3.9vw;
+        text-align: left;
+    }
+}
+
+.slide-header__sub {
+    text-align: center;
+}
+
+
+
+@media (min-width: 768px) {
+    .slide-header__sub {
+        margin-left: 1.2vw;
+        text-align: left;
     }
 }
 
@@ -663,7 +638,7 @@
     overflow: hidden;
 }
 
-.description__slide {
+/* .description__slide {
     font-size: 0.875rem;
 }
 
@@ -677,7 +652,7 @@
     .description__slide {
         font-size: 0.95vw;
     }
-}
+} */
 
 .description.is-active .description__slide {
     transition: transform 300ms ease-in;
