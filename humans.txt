@@ -10,13 +10,13 @@
 	E-mail: craig@compulutions.co.za
 	From: Port Alfred, Eastern Cape, South Africa.
 /* SITE */
-	Last update:2012/02/04
+	Last update:2018/02/18
 	Standards: HTML5, CSS3.
 	Language: English.
 	Doctype: HTML5.
-	Software: Sublime Text, Photoshop, Illustrator, Sketchup.
-	Components: Bootstrap, Jquery, One Page Scroll, queryLoader2, FitText, Progressbar, Slick-Carousel,.
-	Fonts: Google-Fonts, Font-Awesome, Icomoon.
+	Software: Visual Studio Code, Photoshop, Illustrator, Sketchup.
+	Components: Jquery, One Page Scroll, Slick-Carousel.
+	Fonts: Lato, Source-Sans Pro.
 
 
 
