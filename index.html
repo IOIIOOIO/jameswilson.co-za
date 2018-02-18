@@ -20,6 +20,25 @@
   <link rel="apple-touch-icon" sizes="144x144" href="./apple-touch-icon-144x144.png" />
   <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon-152x152.png" />
 
+  <script type="text/javascript" src="./assets/plugins/page-loader/queryloader2.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="./assets/plugins/jquery/jquery-1.11.1.min.js"><\/script>')
+  </script>
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function () {
+      new QueryLoader2(document.querySelector("body"), {
+        barColor: "#efefef",
+        backgroundColor: "#111",
+        percentage: true,
+        barHeight: 1,
+        minimumTime: 200,
+        fadeOutTime: 100,
+        onComplete: function () {}
+      });
+    });
+  </script>
+
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
@@ -47,11 +66,11 @@
 
           <article class='slideshow'>
               <header class='slide-header'>
-                <h1 class='slide-header__main'>World Industries</h1>
-                <h2 class='slide-header__sub'>2017-2018</h2>
+                <h1 class='slide-header__main'>Map Studio</h1>
+                <h2 class='slide-header__sub'>Aug 2015 - Oct 2015</h2>
               </header>
-              <input checked='checked' class='thumbnail-radio' id='thumbnail-radio-1' name='thumbnails' type='radio'>
-              <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-radio-1' style='background-image: url(http://via.placeholder.com/1297x800)'>
+              <input checked='checked' class='thumbnail-radio' id='thumbnail-ms-1' name='thumbnails' type='radio'>
+              <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-ms-1' style='background-image: url(http://via.placeholder.com/1297x800)'>
                 Thumbnail label
                 <span class='direction-hover__right' data-label='Thumbnail label'></span>
                 <span class='direction-hover__left' data-label='Thumbnail label'></span>
@@ -59,8 +78,8 @@
                 <span class='direction-hover__bottom' data-label='Thumbnail label'></span>
                 <span class='direction-hover__center' data-label='Thumbnail label'></span>
               </label>
-              <input class='thumbnail-radio' id='thumbnail-radio-2' name='thumbnails' type='radio'>
-              <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-radio-2' style='background-image: url(http://via.placeholder.com/1135x700)'>
+              <input class='thumbnail-radio' id='thumbnail-ms-2' name='thumbnails' type='radio'>
+              <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-ms-2' style='background-image: url(http://via.placeholder.com/1135x700)'>
                 Thumbnail label
                 <span class='direction-hover__right' data-label='Thumbnail label'></span>
                 <span class='direction-hover__left' data-label='Thumbnail label'></span>
@@ -68,8 +87,8 @@
                 <span class='direction-hover__bottom' data-label='Thumbnail label'></span>
                 <span class='direction-hover__center' data-label='Thumbnail label'></span>
               </label>
-              <input class='thumbnail-radio' id='thumbnail-radio-3' name='thumbnails' type='radio'>
-              <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-radio-3' style='background-image: url(http://via.placeholder.com/973x600)'>
+              <input class='thumbnail-radio' id='thumbnail-ms-3' name='thumbnails' type='radio'>
+              <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-ms-3' style='background-image: url(http://via.placeholder.com/973x600)'>
                 Thumbnail label
                 <span class='direction-hover__right' data-label='Thumbnail label'></span>
                 <span class='direction-hover__left' data-label='Thumbnail label'></span>
@@ -77,8 +96,8 @@
                 <span class='direction-hover__bottom' data-label='Thumbnail label'></span>
                 <span class='direction-hover__center' data-label='Thumbnail label'></span>
               </label>
-              <input class='thumbnail-radio' id='thumbnail-radio-4' name='thumbnails' type='radio'>
-              <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-radio-4' style='background-image: url(http://via.placeholder.com/810x500)'>
+              <input class='thumbnail-radio' id='thumbnail-ms-4' name='thumbnails' type='radio'>
+              <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-ms-4' style='background-image: url(http://via.placeholder.com/810x500)'>
                 Thumbnail label
                 <span class='direction-hover__right' data-label='Thumbnail label'></span>
                 <span class='direction-hover__left' data-label='Thumbnail label'></span>
@@ -86,13 +105,13 @@
                 <span class='direction-hover__bottom' data-label='Thumbnail label'></span>
                 <span class='direction-hover__center' data-label='Thumbnail label'></span>
               </label>
-              <img class='main-image' id='main-image-1' src='http://via.placeholder.com/1297x800'>
-              <img class='main-image' id='main-image-2' src='http://via.placeholder.com/1135x700'>
-              <img class='main-image' id='main-image-3' src='http://via.placeholder.com/973x600'>
-              <img class='main-image' id='main-image-4' src='http://via.placeholder.com/810x500'>
+              <img class='main-image' id='main-ms-1' src='http://via.placeholder.com/1297x800'>
+              <img class='main-image' id='main-ms-2' src='http://via.placeholder.com/1135x700'>
+              <img class='main-image' id='main-ms-3' src='http://via.placeholder.com/973x600'>
+              <img class='main-image' id='main-ms-4' src='http://via.placeholder.com/810x500'>
               <div class='description' id='js-slide'>
                 <p class='description__slide'>
-                  Lorem ipsum dolor sit amet, in doming impedit sensibus quo, erant facete viderer te cum, pro assentior sadipscing no. Oratio adversarium eum at, explicari aliquando at pri. Enim quando vel in.
+                  MapStudio has been the leading publisher and distributor of maps, travel and lifestyle publications in Africa for over 55 years. I worked with the marketing team to support all marketing and sales efforts. I planned projects and took full ownership of work allocated to me.
                 </p>
               </div>
             </article>
@@ -802,24 +821,6 @@
     </div>
   </div>
   <!-- SCRIPTS -->
-  <script type="text/javascript" src="./assets/plugins/page-loader/queryloader2.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="./assets/plugins/jquery/jquery-1.11.1.min.js"><\/script>')
-  </script>
-  <script type="text/javascript">
-    window.addEventListener('DOMContentLoaded', function () {
-      new QueryLoader2(document.querySelector("body"), {
-        barColor: "#efefef",
-        backgroundColor: "#111",
-        percentage: true,
-        barHeight: 1,
-        minimumTime: 200,
-        fadeOutTime: 100,
-        onComplete: function () {}
-      });
-    });
-  </script>
   <script type="text/javascript" src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./assets/plugins/onepage-scroll/jquery.onepage-scroll.js"></script>
   <script type="text/javascript" src="./assets/plugins/slick-carousel/slick.min.js"></script>

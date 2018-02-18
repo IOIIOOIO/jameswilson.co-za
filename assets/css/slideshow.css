@@ -146,10 +146,11 @@
             display: unset;
             opacity: 0;
         }
-        .thumbnail-radio#thumbnail-radio-1:checked~.thumbnail-1,
-        .thumbnail-radio#thumbnail-radio-2:checked~.thumbnail-2,
-        .thumbnail-radio#thumbnail-radio-3:checked~.thumbnail-3,
-        .thumbnail-radio#thumbnail-radio-4:checked~.thumbnail-4 {
+        /* mapstudio */
+        .thumbnail-radio#thumbnail-ms-1:checked~.thumbnail-1,
+        .thumbnail-radio#thumbnail-ms-2:checked~.thumbnail-2,
+        .thumbnail-radio#thumbnail-ms-3:checked~.thumbnail-3,
+        .thumbnail-radio#thumbnail-ms-4:checked~.thumbnail-4 {
             -webkit-transform: translateZ(var(--perspective-depth));
             transform: translateZ(var(--perspective-depth));
             -webkit-box-shadow: -8px 4px 8px 2px rgba(0, 0, 0, .15);
@@ -161,18 +162,20 @@
             transition: transform 200ms ease-out;
             transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
         }
-        .thumbnail-radio#thumbnail-radio-1:checked~.thumbnail-1::before,
-        .thumbnail-radio#thumbnail-radio-2:checked~.thumbnail-2::before,
-        .thumbnail-radio#thumbnail-radio-3:checked~.thumbnail-3::before,
-        .thumbnail-radio#thumbnail-radio-4:checked~.thumbnail-4::before {
+        /* mapstudio */
+        .thumbnail-radio#thumbnail-ms-1:checked~.thumbnail-1::before,
+        .thumbnail-radio#thumbnail-ms-2:checked~.thumbnail-2::before,
+        .thumbnail-radio#thumbnail-ms-3:checked~.thumbnail-3::before,
+        .thumbnail-radio#thumbnail-ms-4:checked~.thumbnail-4::before {
             -webkit-transform: translateZ(var(--perspective-depth));
             transform: translateZ(var(--perspective-depth));
             opacity: 0.5;
         }
-        .thumbnail-radio#thumbnail-radio-1:checked~#main-image-1,
-        .thumbnail-radio#thumbnail-radio-2:checked~#main-image-2,
-        .thumbnail-radio#thumbnail-radio-3:checked~#main-image-3,
-        .thumbnail-radio#thumbnail-radio-4:checked~#main-image-4 {
+        /* mapstudio */
+        .thumbnail-radio#thumbnail-ms-1:checked~#main-ms-1,
+        .thumbnail-radio#thumbnail-ms-2:checked~#main-ms-2,
+        .thumbnail-radio#thumbnail-ms-3:checked~#main-ms-3,
+        .thumbnail-radio#thumbnail-ms-4:checked~#main-ms-4 {
             display: block;
             -webkit-box-shadow: 6px 4px 8px 0px rgba(0, 0, 0, .13);
             box-shadow: 6px 4px 8px 0px rgba(0, 0, 0, .13);
@@ -675,10 +678,11 @@
         }
     }
     @media (min-width: 1200px) {
-        #main-image-1,
-        #main-image-2,
-        #main-image-3,
-        #main-image-4 {
+        /* mapstudio */
+        #main-ms-1,
+        #main-ms-2,
+        #main-ms-3,
+        #main-ms-4 {
             display: none;
         }
     }
