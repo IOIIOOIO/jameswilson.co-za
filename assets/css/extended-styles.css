@@ -47,6 +47,10 @@ a:focus {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+}
+
 h3#compulutions-header {
   text-align: center;
 }
@@ -103,6 +107,8 @@ div.arrowDown {
   color: rgb(255, 255, 255);
   font-size: 30vw;
   line-height: .9;
+  margin-top: -5vh;
+  margin-bottom: 3vh;
 }
 
 @media (min-width: 768px) {
@@ -124,6 +130,19 @@ div.arrowDown {
   text-shadow: 0 1px 1px rgba(0, 0, 0, .75);
   font-family: 'lato', helvetica, arial, sans-serif;
   letter-spacing: .5rem;
+  font-size: 6vw;
+}
+
+@media (min-width: 768px) {
+  .main section.landingPage h2 {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main section.landingPage h2 {
+    font-size: 2.3vw;
+  }
 }
 
 .slick-slider {
@@ -268,6 +287,7 @@ img.work_piece {
 @media (min-width: 1200px) {
   .aboutMe__story {
     font-size: 1.167vw;
+    margin-bottom: 0;
   }
 }
 
@@ -355,6 +375,7 @@ img.work_piece {
   color: rgb(255, 255, 255);
   font-size: 14vw;
   margin-top: -5vh;
+  margin-bottom: 3vh;
 }
 
 @media (min-width: 1200px) {
@@ -380,10 +401,17 @@ img.work_piece {
 }
 
 .main section.footerPage img.doughnut {
+  display: none;
   width: 22vw;
   position: absolute;
   right: 5%;
   bottom: 9vh;
+}
+
+@media (min-width: 992px) {
+  .main section.footerPage img.doughnut {
+    display: block;
+  }
 }
 
 .footerCopyright {
