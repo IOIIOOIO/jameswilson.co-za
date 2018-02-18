@@ -9,7 +9,8 @@
   <meta name="robots" content="noimageindex" />
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <script type="text/javascript">
-    window.onload = function () {
+    window.addEventListener('DOMContentLoaded', function () {
+      console.log('loading');
       new QueryLoader2(document.querySelector("body"), {
         barColor: "#efefef",
         backgroundColor: "#111",
@@ -19,7 +20,7 @@
         fadeOutTime: 100,
         onComplete: function () {}
       });
-    };
+    });
   </script>
   <script type="text/javascript" src="./assets/plugins/page-loader/queryloader2.min.js"></script>
   <link rel="author" href="./humans.txt" />
