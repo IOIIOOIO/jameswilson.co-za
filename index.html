@@ -1,13 +1,14 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>James Wilson - Graphic Design Portfolio</title>
-  <meta name="description" content="My name is James Wilson, I'm a graphic designer with one year's experience in the clothing industry and seven years' in the print industry."
-  />
+  <meta name="description" content="An overview of my work experience as a Graphic Designer and Web Developer" />
   <meta name="robots" content="noimageindex" />
-  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Scripts -->
+  <script type="text/javascript" src="./assets/plugins/page-loader/queryloader2.min.js"></script>
   <script type="text/javascript">
     window.addEventListener('DOMContentLoaded', function () {
       console.log('loading');
@@ -18,11 +19,12 @@
         barHeight: 1,
         minimumTime: 200,
         fadeOutTime: 100,
-        onComplete: function () {}
+        onComplete: function () {
+          console.log('finished');
+        }
       });
     });
   </script>
-  <script type="text/javascript" src="./assets/plugins/page-loader/queryloader2.min.js"></script>
   <link rel="author" href="./humans.txt" />
   <!-- Fav Icons -->
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
@@ -35,18 +37,13 @@
   <link rel="apple-touch-icon" sizes="144x144" href="./apple-touch-icon-144x144.png" />
   <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon-152x152.png" />
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="./assets/plugins/jquery/jquery-1.11.1.min.js"><\/script>')
-  </script>
-
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
   <!-- CSS -->
   <link href="./assets/plugins/normalize/normalize.css" rel="stylesheet" type="text/css">
   <link href="./assets/plugins/bootstrap/bootstrap-grid.css" rel="stylesheet" type="text/css">
-  <link href="./assets/plugins/onepage-scroll/onepage-scroll.css" rel="stylesheet" type="text/css">
+  <!-- <link href="./assets/plugins/onepage-scroll/onepage-scroll.css" rel="stylesheet" type="text/css"> -->
   <link href="./assets/css/styles.css" rel="stylesheet" type="text/css">
   <link href="./assets/css/extended-styles.css" rel="stylesheet" type="text/css">
   <link href="./assets/css/slideshow.css" rel="stylesheet" type="text/css">
@@ -54,388 +51,381 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="main">
-      <!-- Landing Page -->
-      <section class="landingPage">
-        <h1 class="text3d">Hello<br/>World</h1>
-        <h2>welcome to my portfolio</h2>
-      </section>
-      <!-- Mapstudio Section -->
-      <section class="jobPage">
+  <main class="main">
+    <!-- Landing Page -->
+    <section class="section u-flex-center landingPage">
+      <header>
+        <h1 class="header text3d">Hello<br/>World</h1>
+        <h2 clas="tsubheader ext-center">welcome to my portfolio</h2>
+      </header>
+    </section>
+    <!-- Mapstudio Section -->
+    <section class="section u-flex-center section--bg-fixed jobPage">
 
-        <article class='slideshow'>
-          <header class='slide-header'>
-            <h1 class='slide-header__main'>Map Studio</h1>
-            <h2 class='slide-header__sub'>Aug 2015 - Oct 2015</h2>
-          </header>
-          <input checked='checked' class='thumbnail-radio' id='thumbnail-ms-1' name='mapstudio' type='radio'>
-          <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-ms-1' style='background-image: url(./assets/img/slides/mapstudio/web-banners.png'>
-            Web Banners
-            <span class='direction-hover__right' data-label='Web Banners'></span>
-            <span class='direction-hover__left' data-label='Web Banners'></span>
-            <span class='direction-hover__top' data-label='Web Banners'></span>
-            <span class='direction-hover__bottom' data-label='Web Banners'></span>
-          </label>
-          <input class='thumbnail-radio' id='thumbnail-ms-2' name='mapstudio' type='radio'>
-          <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-ms-2' style='background-image: url(./assets/img/slides/mapstudio/facebook-posts.png'>
-            Social Media
-            <span class='direction-hover__right' data-label='Social Media'></span>
-            <span class='direction-hover__left' data-label='Social Media'></span>
-            <span class='direction-hover__top' data-label='Social Media'></span>
-            <span class='direction-hover__bottom' data-label='Social Media'></span>
-          </label>
-          <input class='thumbnail-radio' id='thumbnail-ms-3' name='mapstudio' type='radio'>
-          <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-ms-3' style='background-image: url(./assets/img/slides/mapstudio/posters.png'>
-            Posters
-            <span class='direction-hover__right' data-label='Posters'></span>
-            <span class='direction-hover__left' data-label='Posters'></span>
-            <span class='direction-hover__top' data-label='Posters'></span>
-            <span class='direction-hover__bottom' data-label='Posters'></span>
-          </label>
-          <input class='thumbnail-radio' id='thumbnail-ms-4' name='mapstudio' type='radio'>
-          <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-ms-4' style='background-image: url(./assets/img/slides/mapstudio/posters-promotions.png'>
-            Posters
-            <span class='direction-hover__right' data-label='Posters'></span>
-            <span class='direction-hover__left' data-label='Posters'></span>
-            <span class='direction-hover__top' data-label='Posters'></span>
-            <span class='direction-hover__bottom' data-label='Posters'></span>
-          </label>
-          <img class='main-image' id='main-ms-1' src='./assets/img/slides/mapstudio/web-banners.png'>
-          <img class='main-image' id='main-ms-2' src='./assets/img/slides/mapstudio/facebook-posts.png'>
-          <img class='main-image' id='main-ms-3' src='./assets/img/slides/mapstudio/posters.png'>
-          <img class='main-image' id='main-ms-4' src='./assets/img/slides/mapstudio/posters-promotions.png'>
-          <div class='description' id='js-slide'>
-            <p class='description__slide'>
-              MapStudio has been the leading publisher and distributor of maps, travel and lifestyle publications in Africa for over 55
-              years. I worked with the marketing team to support all marketing and sales efforts. I planned projects and
-              took full ownership of work allocated to me.
-            </p>
-          </div>
-        </article>
-      </section>
-      <!-- Compulutions Section -->
-      <section class="jobPage">
-        <article class='slideshow'>
-          <header class='slide-header'>
-            <h1 class='slide-header__main'>Compulutions</h1>
-            <h2 class='slide-header__sub'>Mar 2015 - Jul 2015</h2>
-          </header>
-          <input checked='checked' class='thumbnail-radio' id='thumbnail-com-1' name='compulutions' type='radio'>
-          <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-com-1' style='background-image: url(./assets/img/slides/compulutions/compulutions.png'>
-            Brand ID
-            <span class='direction-hover__right' data-label='Brand ID'></span>
-            <span class='direction-hover__left' data-label='Brand ID'></span>
-            <span class='direction-hover__top' data-label='Brand ID'></span>
-            <span class='direction-hover__bottom' data-label='Brand ID'></span>
-          </label>
-          <input class='thumbnail-radio' id='thumbnail-com-2' name='compulutions' type='radio'>
-          <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-com-2' style='background-image: url(./assets/img/slides/compulutions/freight-rush.png'>
-            Brand ID
-            <span class='direction-hover__right' data-label='Brand ID'></span>
-            <span class='direction-hover__left' data-label='Brand ID'></span>
-            <span class='direction-hover__top' data-label='Brand ID'></span>
-            <span class='direction-hover__bottom' data-label='Brand ID'></span>
-          </label>
-          <input class='thumbnail-radio' id='thumbnail-com-3' name='compulutions' type='radio'>
-          <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-com-3' style='background-image: url(./assets/img/slides/compulutions/lcom.png'>
-            Brand ID
-            <span class='direction-hover__right' data-label='Brand ID'></span>
-            <span class='direction-hover__left' data-label='Brand ID'></span>
-            <span class='direction-hover__top' data-label='Brand ID'></span>
-            <span class='direction-hover__bottom' data-label='Brand ID'></span>
-          </label>
-          <input class='thumbnail-radio' id='thumbnail-com-4' name='compulutions' type='radio'>
-          <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-com-4' style='background-image: url(./assets/img/slides/compulutions/nexgen.png'>
-            Brand ID
-            <span class='direction-hover__right' data-label='Brand ID'></span>
-            <span class='direction-hover__left' data-label='Brand ID'></span>
-            <span class='direction-hover__top' data-label='Brand ID'></span>
-            <span class='direction-hover__bottom' data-label='Brand ID'></span>
-          </label>
-          <img class='main-image' id='main-com-1' src='./assets/img/slides/compulutions/compulutions.png'>
-          <img class='main-image' id='main-com-2' src='./assets/img/slides/compulutions/freight-rush.png'>
-          <img class='main-image' id='main-com-3' src='./assets/img/slides/compulutions/lcom.png'>
-          <img class='main-image' id='main-com-4' src='./assets/img/slides/compulutions/nexgen.png'>
-          <div class='description' id='js-slide'>
-            <p class='description__slide'>
-              I worked in partnership with back-end developer and founder of
-              <a href="https://compulutions.co.za/" target="_blank">Compulutions (PTY) Ltd</a> to offer quality web development services. During my time with Compulutions I believe
-              I proved my ability as a creative Graphic and Web Designer.
-            </p>
-          </div>
-        </article>
-      </section>
-      <!-- Yesman Section -->
-      <section class="jobPage">
-        <article class='slideshow'>
-          <header class='slide-header'>
-            <h1 class='slide-header__main'>Yesman</h1>
-            <h2 class='slide-header__sub'>Jul 2010 - Feb 2015</h2>
-          </header>
-          <input checked='checked' class='thumbnail-radio' id='thumbnail-ym-1' name='yesman' type='radio'>
-          <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-ym-1' style='background-image: url(./assets/img/slides/yesman/brands.png'>
-            DTP
-            <span class='direction-hover__right' data-label='DTP'></span>
-            <span class='direction-hover__left' data-label='DTP'></span>
-            <span class='direction-hover__top' data-label='DTP'></span>
-            <span class='direction-hover__bottom' data-label='DTP'></span>
-          </label>
-          <input class='thumbnail-radio' id='thumbnail-ym-2' name='yesman' type='radio'>
-          <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-ym-2' style='background-image: url(./assets/img/slides/yesman/gotv.png'>
-            3D Mockups
-            <span class='direction-hover__right' data-label='3D Mockups'></span>
-            <span class='direction-hover__left' data-label='3D Mockups'></span>
-            <span class='direction-hover__top' data-label='3D Mockups'></span>
-            <span class='direction-hover__bottom' data-label='3D Mockups'></span>
-          </label>
-          <input class='thumbnail-radio' id='thumbnail-ym-3' name='yesman' type='radio'>
-          <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-ym-3' style='background-image: url(./assets/img/slides/yesman/brochure-chapters.jpg'>
-            Brochure
-            <span class='direction-hover__right' data-label='Brochure'></span>
-            <span class='direction-hover__left' data-label='Brochure'></span>
-            <span class='direction-hover__top' data-label='Brochure'></span>
-            <span class='direction-hover__bottom' data-label='Brochure'></span>
-          </label>
-          <input class='thumbnail-radio' id='thumbnail-ym-4' name='yesman' type='radio'>
-          <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-ym-4' style='background-image: url(./assets/img/slides/yesman/brochure-products.jpg'>
-            Brochure
-            <span class='direction-hover__right' data-label='Brochure'></span>
-            <span class='direction-hover__left' data-label='Brochure'></span>
-            <span class='direction-hover__top' data-label='Brochure'></span>
-            <span class='direction-hover__bottom' data-label='Brochure'></span>
-          </label>
-          <img class='main-image' id='main-ym-1' src='./assets/img/slides/yesman/brands.png'>
-          <img class='main-image' id='main-ym-2' src='./assets/img/slides/yesman/gotv.png'>
-          <img class='main-image' id='main-ym-3' src='./assets/img/slides/yesman/brochure-chapters.jpg'>
-          <img class='main-image' id='main-ym-4' src='./assets/img/slides/yesman/brochure-products.jpg'>
-          <div class='description' id='js-slide'>
-            <p class='description__slide'>
-              As lead designer at
-              <a href="https://www.yesman.co.za/" target="_blank">Yesman</a> I took many initiatives that were instrumental in evolving an organised and professional printing
-              workflow. My efforts were key to helping Yesman provide world class service and meet growing demand.
-            </p>
-          </div>
-        </article>
-      </section>
-      <!-- Hillcrest Signs Section -->
-      <section class="jobPage">
-        <article class='slideshow'>
-          <header class='slide-header'>
-            <h1 class='slide-header__main'>Hillcrest Signs</h1>
-            <h2 class='slide-header__sub'>Jan 2008 - Jun 2010</h2>
-          </header>
-          <input checked='checked' class='thumbnail-radio' id='thumbnail-hs-1' name='hillcrest-signs' type='radio'>
-          <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-hs-1' style='background-image: url(./assets/img/slides/hillcrest-signs/decals.png'>
-            Vehicle Decals
-            <span class='direction-hover__right' data-label='Vehicle Decals'></span>
-            <span class='direction-hover__left' data-label='Vehicle Decals'></span>
-            <span class='direction-hover__top' data-label='Vehicle Decals'></span>
-            <span class='direction-hover__bottom' data-label='Vehicle Decals'></span>
-          </label>
-          <input class='thumbnail-radio' id='thumbnail-hs-2' name='hillcrest-signs' type='radio'>
-          <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-hs-2' style='background-image: url(./assets/img/slides/hillcrest-signs/horse.png'>
-            Stickers
-            <span class='direction-hover__right' data-label='Stickers'></span>
-            <span class='direction-hover__left' data-label='Stickers'></span>
-            <span class='direction-hover__top' data-label='Stickers'></span>
-            <span class='direction-hover__bottom' data-label='Stickers'></span>
-          </label>
-          <input class='thumbnail-radio' id='thumbnail-hs-3' name='hillcrest-signs' type='radio'>
-          <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-hs-3' style='background-image: url(./assets/img/slides/hillcrest-signs/banners-1.jpg'>
-            Banners
-            <span class='direction-hover__right' data-label='Banners'></span>
-            <span class='direction-hover__left' data-label='Banners'></span>
-            <span class='direction-hover__top' data-label='Banners'></span>
-            <span class='direction-hover__bottom' data-label='Banners'></span>
-          </label>
-          <input class='thumbnail-radio' id='thumbnail-hs-4' name='hillcrest-signs' type='radio'>
-          <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-hs-4' style='background-image: url(./assets/img/slides/hillcrest-signs/banners-2.jpg'>
-            Banners
-            <span class='direction-hover__right' data-label='Banners'></span>
-            <span class='direction-hover__left' data-label='Banners'></span>
-            <span class='direction-hover__top' data-label='Banners'></span>
-            <span class='direction-hover__bottom' data-label='Banners'></span>
-          </label>
-          <img class='main-image' id='main-hs-1' src='./assets/img/slides/hillcrest-signs/decals.png'>
-          <img class='main-image' id='main-hs-2' src='./assets/img/slides/hillcrest-signs/horse.png'>
-          <img class='main-image' id='main-hs-3' src='./assets/img/slides/hillcrest-signs/banners-1.jpg'>
-          <img class='main-image' id='main-hs-4' src='./assets/img/slides/hillcrest-signs/banners-2.jpg'>
-          <div class='description' id='js-slide'>
-            <p class='description__slide'>
-              At Hillcrest Signs I worked as a store clerk and DTP operator. I was completely unsupervised and delivered under pressure
-              with very short deadlines.
-            </p>
-          </div>
-        </article>
-      </section>
-      <!-- Anupi Section -->
-      <section class="jobPage">
-          <article class='slideshow'>
-            <header class='slide-header'>
-              <h1 class='slide-header__main'>Anupi</h1>
-              <h2 class='slide-header__sub'>Aug 2006 - Dec 2007</h2>
-            </header>
-            <input checked='checked' class='thumbnail-radio' id='thumbnail-anu-1' name='anupi' type='radio'>
-            <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-anu-1' style='background-image: url(./assets/img/slides/anupi/shirts-faces.png'>
-              Garment Prints
-              <span class='direction-hover__right' data-label='Garment Prints'></span>
-              <span class='direction-hover__left' data-label='Garment Prints'></span>
-              <span class='direction-hover__top' data-label='Garment Prints'></span>
-              <span class='direction-hover__bottom' data-label='Garment Prints'></span>
-            </label>
-            <input class='thumbnail-radio' id='thumbnail-anu-2' name='anupi' type='radio'>
-            <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-anu-2' style='background-image: url(./assets/img/slides/anupi/shirts-abstract.png'>
-              Garment Prints
-              <span class='direction-hover__right' data-label='Garment Prints'></span>
-              <span class='direction-hover__left' data-label='Garment Prints'></span>
-              <span class='direction-hover__top' data-label='Garment Prints'></span>
-              <span class='direction-hover__bottom' data-label='Garment Prints'></span>
-            </label>
-            <input class='thumbnail-radio' id='thumbnail-anu-3' name='anupi' type='radio'>
-            <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-anu-3' style='background-image: url(./assets/img/slides/anupi/cads.png'>
-              Product CADs
-              <span class='direction-hover__right' data-label='Product CADs'></span>
-              <span class='direction-hover__left' data-label='Product CADs'></span>
-              <span class='direction-hover__top' data-label='Product CADs'></span>
-              <span class='direction-hover__bottom' data-label='Product CADs'></span>
-            </label>
-            <input class='thumbnail-radio' id='thumbnail-anu-4' name='anupi' type='radio'>
-            <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-anu-4' style='background-image: url(./assets/img/slides/anupi/storyboards.jpg'>
-              Storyboards
-              <span class='direction-hover__right' data-label='Storyboards'></span>
-              <span class='direction-hover__left' data-label='Storyboards'></span>
-              <span class='direction-hover__top' data-label='Storyboards'></span>
-              <span class='direction-hover__bottom' data-label='Storyboards'></span>
-            </label>
-            <img class='main-image' id='main-anu-1' src='./assets/img/slides/anupi/shirts-faces.png'>
-            <img class='main-image' id='main-anu-2' src='./assets/img/slides/anupi/shirts-abstract.png'>
-            <img class='main-image' id='main-anu-3' src='./assets/img/slides/anupi/cads.png'>
-            <img class='main-image' id='main-anu-4' src='./assets/img/slides/anupi/storyboards.jpg'>
-            <div class='description' id='js-slide'>
-              <p class='description__slide'>
-                At Hillcrest Signs I worked as a store clerk and DTP operator. I was completely unsupervised and delivered under pressure
-                with very short deadlines.
-              </p>
-            </div>
-          </article>
-        </section>
-      <!-- About Me Page -->
-      <section class="aboutPage">
-        <div class="col-lg-8 about">
-          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 proficiencies">
-            <h1>Proficiencies</h1>
-            <ul class="proficiency-stats">
-              <li class="proficiency-stats__stat">
-                <img class="profiency-stats__icon" src="./assets/img/program-icons/illustrator.png" title="Adobe Illustrator">
-                <div class="proficiency-stats__bar">
-                  <div class="proficiency-stats__percentage-wrap">
-                    <div class="proficiency-stats__percentage" style="transform: translateX(0)">100%</div>
-                  </div>
-                </div>
-              </li>
+      <article class='slideshow'>
+        <header class='slide-header'>
+          <h1 class='header slide-header__main'>Map Studio</h1>
+          <h2 class='subheader slide-header__sub'>Aug 2015 - Oct 2015</h2>
+        </header>
+        <input checked='checked' class='thumbnail-radio' id='thumbnail-ms-1' name='mapstudio' type='radio'>
+        <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-ms-1' style='background-image: url(./assets/img/slides/mapstudio/web-banners.png)'>
+          Web Banners
+          <span class='direction-hover__right' data-label='Web Banners'></span>
+          <span class='direction-hover__left' data-label='Web Banners'></span>
+          <span class='direction-hover__top' data-label='Web Banners'></span>
+          <span class='direction-hover__bottom' data-label='Web Banners'></span>
+        </label>
 
-              <li class="proficiency-stats__stat">
-                <img class="profiency-stats__icon" src="./assets/img/program-icons/photoshop.png" title="Adobe Photoshop">
-                <div class="proficiency-stats__bar">
-                  <div class="proficiency-stats__percentage-wrap">
-                    <div class="proficiency-stats__percentage" style="transform: translateX(-10%)">90%</div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="proficiency-stats__stat">
-                <img class="profiency-stats__icon" src="./assets/img/program-icons/indesign.png" title="Adobe InDesign">
-                <div class="proficiency-stats__bar">
-                  <div class="proficiency-stats__percentage-wrap">
-                    <div class="proficiency-stats__percentage" style="transform: translateX(-20%)">80%</div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="proficiency-stats__stat">
-                <img class="proficiency-stats__icon" src="./assets/img/program-icons/html.png" title="HTML5">
-                <div class="proficiency-stats__bar">
-                  <div class="proficiency-stats__percentage-wrap">
-                    <div class="proficiency-stats__percentage" style="transform: translateX(-20%)">80%</div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="proficiency-stats__stat">
-                <img class="proficiency-stats__icon" src="./assets/img/program-icons/css.png" title="CSS3">
-                <div class="proficiency-stats__bar">
-                  <div class="proficiency-stats__percentage-wrap">
-                    <div class="proficiency-stats__percentage" style="transform: translateX(-10%)">90%</div>
-                  </div>
-                </div>
-              </li>
-              <li class="proficiency-stats__stat">
-                <img class="profiency-stats__icon" src="./assets/img/program-icons/javascript.png" title="JavaScript">
-                <div class="proficiency-stats__bar">
-                  <div class="proficiency-stats__percentage-wrap">
-                    <div class="proficiency-stats__percentage" style="transform: translateX(-40%)">60%</div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 aboutMe">
-            <h1>About Me</h1>
-            <p class="aboutMe__story">I'm a graphic designer and web developer with over ten years' combined experience. My first job, before pursuing
-              a career in graphic design, was working for my brother as a carpenter. He designs and manufactures
-              <a href="http://houtlander.co.za/" target="_blank">award-winning</a> furniture and I'm grateful for my formative years spent with him as I learned the values
-              of exceptional workmanship.</p>
-            <p class="aboutMe__story"> Through hard work, passion and determination I became the leader of a world class printing department at
-              <a href="http://www.yesman.co.za/" target="_blank">Yesman</a>. From there I dived into web development and came to join
-              <a href="http://www.zailab.com/" target="_blank">ZaiLab</a> - an amazing tech startup set to revolutionise the call center industry.</p>
-            <p class="aboutMe__story">When I'm not working hard to make the web more beautiful you can find me spending endless hours on the internet
-              either reading about best practices, the latest trends or admiring awesome designs.</p>
-            <p class="aboutMe__story">
-              My favourite sites are:
-              <a href="http://www.smashingmagazine.com/" target="_blank">smashingmagazine.com</a> |
-              <a href="https://alistapart.com" target="_blank">alistapart.com</a> |
-              <a href="http://www.thisiscolossal.com/" target="_blank">thisiscolossal.com</a> and sometimes just for fun:
-              <a href="http://manbabies.com/" target="_blank">manbabies.com</a>
-            </p>
-            <p class="aboutMe__story">For a detailed CV please e-mail me:
-              <a class="emailLink" href="mailto:jamesjw01@gmail.com">jamesjw01@gmail.com</a>
-            </p>
-          </div>
+        <input class='thumbnail-radio' id='thumbnail-ms-2' name='mapstudio' type='radio'>
+        <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-ms-2' style='background-image: url(./assets/img/slides/mapstudio/facebook-posts.png)'>
+          Social Media
+          <span class='direction-hover__right' data-label='Social Media'></span>
+          <span class='direction-hover__left' data-label='Social Media'></span>
+          <span class='direction-hover__top' data-label='Social Media'></span>
+          <span class='direction-hover__bottom' data-label='Social Media'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-ms-3' name='mapstudio' type='radio'>
+        <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-ms-3' style='background-image: url(./assets/img/slides/mapstudio/posters.png)'>
+          Posters
+          <span class='direction-hover__right' data-label='Posters'></span>
+          <span class='direction-hover__left' data-label='Posters'></span>
+          <span class='direction-hover__top' data-label='Posters'></span>
+          <span class='direction-hover__bottom' data-label='Posters'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-ms-4' name='mapstudio' type='radio'>
+        <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-ms-4' style='background-image: url(./assets/img/slides/mapstudio/posters-promotions.png)'>
+          Posters
+          <span class='direction-hover__right' data-label='Posters'></span>
+          <span class='direction-hover__left' data-label='Posters'></span>
+          <span class='direction-hover__top' data-label='Posters'></span>
+          <span class='direction-hover__bottom' data-label='Posters'></span>
+        </label>
+        <img class='main-image' id='main-ms-1' src='./assets/img/slides/mapstudio/web-banners.png' alt='Web banners' />
+        <img class='main-image' id='main-ms-2' src='./assets/img/slides/mapstudio/facebook-posts.png' alt='Social media posts' />
+        <img class='main-image' id='main-ms-3' src='./assets/img/slides/mapstudio/posters.png' alt='Posters' />
+        <img class='main-image' id='main-ms-4' src='./assets/img/slides/mapstudio/posters-promotions.png' alt='Posters' />
+        <div class='description'>
+          <p class='description__slide'>
+            MapStudio has been the leading publisher and distributor of maps, travel and lifestyle publications in Africa for over 55
+            years. I worked with the marketing team to support all marketing and sales efforts. I planned projects and took
+            full ownership of work allocated to me.
+          </p>
         </div>
-      </section>
-      <!-- Footer Page -->
-      <section class="footerPage">
-        <h1 class="text3d">
-          Thanks For
-          <br/> Visiting
-        </h1>
-        <img class="icon-smiley" src="./assets/img/backgrounds/smiley.png" />
-        <img class="doughnut" src="./assets/img/backgrounds/doughnut.png" />
-        <div class="footerCopyright">
-          <div class="col-sm-6">
-            <p class="text-left">Copyright © 2018 James Wilson. All Rights Reserved.</p>
-          </div>
-          <div class="col-sm-6 pull-right">
-            <p class="text-right">Version 2.0 | 18 February 2018 |
-              <a href="./humans.txt">Humans.txt</a>
-            </p>
-          </div>
+      </article>
+    </section>
+    <!-- Compulutions Section -->
+    <section class="section u-flex-center section--bg-fixed jobPage">
+      <article class='slideshow'>
+        <header class='slide-header'>
+          <h1 class='header slide-header__main'>Compulutions</h1>
+          <h2 class='subheader slide-header__sub'>Mar 2015 - Jul 2015</h2>
+        </header>
+        <input checked='checked' class='thumbnail-radio' id='thumbnail-com-1' name='compulutions' type='radio'>
+        <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-com-1' style='background-image: url(./assets/img/slides/compulutions/compulutions.png)'>
+          Brand ID
+          <span class='direction-hover__right' data-label='Brand ID'></span>
+          <span class='direction-hover__left' data-label='Brand ID'></span>
+          <span class='direction-hover__top' data-label='Brand ID'></span>
+          <span class='direction-hover__bottom' data-label='Brand ID'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-com-2' name='compulutions' type='radio'>
+        <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-com-2' style='background-image: url(./assets/img/slides/compulutions/freight-rush.png)'>
+          Brand ID
+          <span class='direction-hover__right' data-label='Brand ID'></span>
+          <span class='direction-hover__left' data-label='Brand ID'></span>
+          <span class='direction-hover__top' data-label='Brand ID'></span>
+          <span class='direction-hover__bottom' data-label='Brand ID'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-com-3' name='compulutions' type='radio'>
+        <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-com-3' style='background-image: url(./assets/img/slides/compulutions/lcom.png)'>
+          Brand ID
+          <span class='direction-hover__right' data-label='Brand ID'></span>
+          <span class='direction-hover__left' data-label='Brand ID'></span>
+          <span class='direction-hover__top' data-label='Brand ID'></span>
+          <span class='direction-hover__bottom' data-label='Brand ID'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-com-4' name='compulutions' type='radio'>
+        <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-com-4' style='background-image: url(./assets/img/slides/compulutions/nexgen.png)'>
+          Brand ID
+          <span class='direction-hover__right' data-label='Brand ID'></span>
+          <span class='direction-hover__left' data-label='Brand ID'></span>
+          <span class='direction-hover__top' data-label='Brand ID'></span>
+          <span class='direction-hover__bottom' data-label='Brand ID'></span>
+        </label>
+        <img class='main-image' id='main-com-1' src='./assets/img/slides/compulutions/compulutions.png' alt='Compulutions Logo' />
+        <img class='main-image' id='main-com-2' src='./assets/img/slides/compulutions/freight-rush.png' alt='Freight Rush' />
+        <img class='main-image' id='main-com-3' src='./assets/img/slides/compulutions/lcom.png' alt='Lcom Vehicle Branding' />
+        <img class='main-image' id='main-com-4' src='./assets/img/slides/compulutions/nexgen.png' alt='Nexgen Business Cards' />
+        <div class='description'>
+          <p class='description__slide'>
+            I worked in partnership with back-end developer and founder of
+            <a href="https://compulutions.co.za/" target="_blank">Compulutions (PTY) Ltd</a> to offer quality web development services. During my time with Compulutions I believe
+            I proved my ability as a creative Graphic and Web Designer.
+          </p>
         </div>
-      </section>
-    </div>
-  </div>
+      </article>
+    </section>
+    <!-- Yesman Section -->
+    <section class="section u-flex-center section--bg-fixed jobPage">
+      <article class='slideshow'>
+        <header class='slide-header'>
+          <h1 class='header slide-header__main'>Yesman</h1>
+          <h2 class='subheader slide-header__sub'>Jul 2010 - Feb 2015</h2>
+        </header>
+        <input checked='checked' class='thumbnail-radio' id='thumbnail-ym-1' name='yesman' type='radio'>
+        <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-ym-1' style='background-image: url(./assets/img/slides/yesman/brands.png)'>
+          DTP
+          <span class='direction-hover__right' data-label='DTP'></span>
+          <span class='direction-hover__left' data-label='DTP'></span>
+          <span class='direction-hover__top' data-label='DTP'></span>
+          <span class='direction-hover__bottom' data-label='DTP'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-ym-2' name='yesman' type='radio'>
+        <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-ym-2' style='background-image: url(./assets/img/slides/yesman/gotv.png)'>
+          3D Mockups
+          <span class='direction-hover__right' data-label='3D Mockups'></span>
+          <span class='direction-hover__left' data-label='3D Mockups'></span>
+          <span class='direction-hover__top' data-label='3D Mockups'></span>
+          <span class='direction-hover__bottom' data-label='3D Mockups'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-ym-3' name='yesman' type='radio'>
+        <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-ym-3' style='background-image: url(./assets/img/slides/yesman/brochure-chapters.jpg)'>
+          Inhouse Marketing
+          <span class='direction-hover__right' data-label='Inhouse Marketing'></span>
+          <span class='direction-hover__left' data-label='Inhouse Marketing'></span>
+          <span class='direction-hover__top' data-label='Inhouse Marketing'></span>
+          <span class='direction-hover__bottom' data-label='Inhouse Marketing'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-ym-4' name='yesman' type='radio'>
+        <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-ym-4' style='background-image: url(./assets/img/slides/yesman/brochure-products.jpg)'>
+          Brochure
+          <span class='direction-hover__right' data-label='Brochure'></span>
+          <span class='direction-hover__left' data-label='Brochure'></span>
+          <span class='direction-hover__top' data-label='Brochure'></span>
+          <span class='direction-hover__bottom' data-label='Brochure'></span>
+        </label>
+        <img class='main-image' id='main-ym-1' src='./assets/img/slides/yesman/brands.png' alt='Yesman Clients' />
+        <img class='main-image' id='main-ym-2' src='./assets/img/slides/yesman/gotv.png' alt='3D Mocukups for clients' />
+        <img class='main-image' id='main-ym-3' src='./assets/img/slides/yesman/brochure-chapters.jpg' alt='Yesman brochure design'
+        />
+        <img class='main-image' id='main-ym-4' src='./assets/img/slides/yesman/brochure-products.jpg' alt='Yesman brochure design'
+        />
+        <div class='description'>
+          <p class='description__slide'>
+            As lead designer at
+            <a href="https://www.yesman.co.za/" target="_blank">Yesman</a> I took many initiatives that were instrumental in evolving an organised and professional printing
+            workflow. My efforts were key to helping Yesman provide world class service and meet growing demand.
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- Hillcrest Signs Section -->
+    <section class="section u-flex-center section--bg-fixed jobPage">
+      <article class='slideshow'>
+        <header class='slide-header'>
+          <h1 class='header slide-header__main'>Hillcrest Signs</h1>
+          <h2 class='subheader slide-header__sub'>Jan 2008 - Jun 2010</h2>
+        </header>
+        <input checked='checked' class='thumbnail-radio' id='thumbnail-hs-1' name='hillcrest-signs' type='radio'>
+        <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-hs-1' style='background-image: url(./assets/img/slides/hillcrest-signs/decals.png)'>
+          Vehicle Decals
+          <span class='direction-hover__right' data-label='Vehicle Decals'></span>
+          <span class='direction-hover__left' data-label='Vehicle Decals'></span>
+          <span class='direction-hover__top' data-label='Vehicle Decals'></span>
+          <span class='direction-hover__bottom' data-label='Vehicle Decals'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-hs-2' name='hillcrest-signs' type='radio'>
+        <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-hs-2' style='background-image: url(./assets/img/slides/hillcrest-signs/horse.png)'>
+          Stickers
+          <span class='direction-hover__right' data-label='Stickers'></span>
+          <span class='direction-hover__left' data-label='Stickers'></span>
+          <span class='direction-hover__top' data-label='Stickers'></span>
+          <span class='direction-hover__bottom' data-label='Stickers'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-hs-3' name='hillcrest-signs' type='radio'>
+        <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-hs-3' style='background-image: url(./assets/img/slides/hillcrest-signs/banners-1.jpg)'>
+          Banners
+          <span class='direction-hover__right' data-label='Banners'></span>
+          <span class='direction-hover__left' data-label='Banners'></span>
+          <span class='direction-hover__top' data-label='Banners'></span>
+          <span class='direction-hover__bottom' data-label='Banners'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-hs-4' name='hillcrest-signs' type='radio'>
+        <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-hs-4' style='background-image: url(./assets/img/slides/hillcrest-signs/banners-2.jpg)'>
+          Banners
+          <span class='direction-hover__right' data-label='Banners'></span>
+          <span class='direction-hover__left' data-label='Banners'></span>
+          <span class='direction-hover__top' data-label='Banners'></span>
+          <span class='direction-hover__bottom' data-label='Banners'></span>
+        </label>
+        <img class='main-image' id='main-hs-1' src='./assets/img/slides/hillcrest-signs/decals.png' alt='Vehicle decals' />
+        <img class='main-image' id='main-hs-2' src='./assets/img/slides/hillcrest-signs/horse.png' alt='Sticker design of a cartoon horse'
+        />
+        <img class='main-image' id='main-hs-3' src='./assets/img/slides/hillcrest-signs/banners-1.jpg' alt='Banner designs' />
+        <img class='main-image' id='main-hs-4' src='./assets/img/slides/hillcrest-signs/banners-2.jpg' alt='Banner designs' />
+        <div class='description'>
+          <p class='description__slide'>
+            At Hillcrest Signs I worked as a store clerk and DTP operator. I was completely unsupervised and delivered under pressure
+            with very short deadlines.
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- Anupi Section -->
+    <section class="section u-flex-center section--bg-fixed jobPage">
+      <article class='slideshow'>
+        <header class='slide-header'>
+          <h1 class='header slide-header__main'>Anupi</h1>
+          <h2 class='subheader slide-header__sub'>Aug 2006 - Dec 2007</h2>
+        </header>
+        <input checked='checked' class='thumbnail-radio' id='thumbnail-anu-1' name='anupi' type='radio'>
+        <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-anu-1' style='background-image: url(./assets/img/slides/anupi/shirts-faces.png)'>
+          Garment Prints
+          <span class='direction-hover__right' data-label='Garment Prints'></span>
+          <span class='direction-hover__left' data-label='Garment Prints'></span>
+          <span class='direction-hover__top' data-label='Garment Prints'></span>
+          <span class='direction-hover__bottom' data-label='Garment Prints'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-anu-2' name='anupi' type='radio'>
+        <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-anu-2' style='background-image: url(./assets/img/slides/anupi/shirts-abstract.png)'>
+          Garment Prints
+          <span class='direction-hover__right' data-label='Garment Prints'></span>
+          <span class='direction-hover__left' data-label='Garment Prints'></span>
+          <span class='direction-hover__top' data-label='Garment Prints'></span>
+          <span class='direction-hover__bottom' data-label='Garment Prints'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-anu-3' name='anupi' type='radio'>
+        <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-anu-3' style='background-image: url(./assets/img/slides/anupi/cads.png)'>
+          Product CADs
+          <span class='direction-hover__right' data-label='Product CADs'></span>
+          <span class='direction-hover__left' data-label='Product CADs'></span>
+          <span class='direction-hover__top' data-label='Product CADs'></span>
+          <span class='direction-hover__bottom' data-label='Product CADs'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-anu-4' name='anupi' type='radio'>
+        <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-anu-4' style='background-image: url(./assets/img/slides/anupi/storyboards.jpg)'>
+          Storyboards
+          <span class='direction-hover__right' data-label='Storyboards'></span>
+          <span class='direction-hover__left' data-label='Storyboards'></span>
+          <span class='direction-hover__top' data-label='Storyboards'></span>
+          <span class='direction-hover__bottom' data-label='Storyboards'></span>
+        </label>
+        <img class='main-image' id='main-anu-1' src='./assets/img/slides/anupi/shirts-faces.png' alt='Abstract t-shirt design' />
+        <img class='main-image' id='main-anu-2' src='./assets/img/slides/anupi/shirts-abstract.png' alt='Abstract t-shirt design' />
+        <img class='main-image' id='main-anu-3' src='./assets/img/slides/anupi/cads.png' alt='Garment technical CADs' />
+        <img class='main-image' id='main-anu-4' src='./assets/img/slides/anupi/storyboards.jpg' alt='Clothing range storyboard presentations' />
+        <div class='description'>
+          <p class='description__slide'>
+            I held a leading position in a team of young fashion designers in a newly established design department. Anupi was a clothing
+            distributor for companies such as Mr Price, The Hub and Ackermans.
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- About Me Page -->
+    <section class="section u-flex-center aboutPage">
+      <div class="col-lg-8 about">
+        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 proficiencies">
+          <h1 class="about__header header">Proficiencies</h1>
+          <ul class="proficiency-stats">
+            <li class="proficiency-stats__stat">
+              <img class="profiency-stats__icon" src="./assets/img/program-icons/illustrator.png" title="Adobe Illustrator" alt="Adobe Illustrator Icon"/>
+              <div class="proficiency-stats__bar">
+                <div class="proficiency-stats__percentage-wrap">
+                  <div class="proficiency-stats__percentage" style="transform: translateX(0)">100%</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="proficiency-stats__stat">
+              <img class="profiency-stats__icon" src="./assets/img/program-icons/photoshop.png" title="Adobe Photoshop" alt="Adobe Photoshop Icon"/>
+              <div class="proficiency-stats__bar">
+                <div class="proficiency-stats__percentage-wrap">
+                  <div class="proficiency-stats__percentage" style="transform: translateX(-10%)">90%</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="proficiency-stats__stat">
+              <img class="profiency-stats__icon" src="./assets/img/program-icons/indesign.png" title="Adobe InDesign" alt="Adobe Indesign Icon"/>
+              <div class="proficiency-stats__bar">
+                <div class="proficiency-stats__percentage-wrap">
+                  <div class="proficiency-stats__percentage" style="transform: translateX(-20%)">80%</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="proficiency-stats__stat">
+              <img class="proficiency-stats__icon" src="./assets/img/program-icons/html.png" title="HTML5" alt="HTML5 Icon" />
+              <div class="proficiency-stats__bar">
+                <div class="proficiency-stats__percentage-wrap">
+                  <div class="proficiency-stats__percentage" style="transform: translateX(-20%)">80%</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="proficiency-stats__stat">
+              <img class="proficiency-stats__icon" src="./assets/img/program-icons/css.png" title="CSS3" alt="CSS3 Icon" />
+              <div class="proficiency-stats__bar">
+                <div class="proficiency-stats__percentage-wrap">
+                  <div class="proficiency-stats__percentage" style="transform: translateX(-10%)">90%</div>
+                </div>
+              </div>
+            </li>
+            <li class="proficiency-stats__stat">
+              <img class="profiency-stats__icon" src="./assets/img/program-icons/javascript.png" title="JavaScript" alt="Javascript Icon"/>
+              <div class="proficiency-stats__bar">
+                <div class="proficiency-stats__percentage-wrap">
+                  <div class="proficiency-stats__percentage" style="transform: translateX(-40%)">60%</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 aboutMe">
+          <h1 class="about__header header">About Me</h1>
+          <p class="aboutMe__story">I'm a graphic designer and web developer with over ten years' combined experience. My first job, before pursuing
+            a career in graphic design, was working for my brother as a carpenter. He designs and manufactures
+            <a href="http://houtlander.co.za/" target="_blank">award-winning</a> furniture and I'm grateful for my formative years spent with him as I learned the value of
+            exceptional workmanship.</p>
+          <p class="aboutMe__story"> Through hard work, passion and determination I became the leader of a world class printing department at
+            <a href="http://www.yesman.co.za/" target="_blank">Yesman</a>. From there I dived into web development and came to join
+            <a href="http://www.zailab.com/" target="_blank">ZaiLab</a> - an amazing tech startup set to revolutionise the call center industry.</p>
+          <p class="aboutMe__story">When I'm not working hard to make the web more beautiful you can find me spending endless hours reading about best
+            practices, the latest trends or admiring awesome designs.</p>
+          <p class="aboutMe__story">
+            My favourite sites are:
+            <a href="http://www.smashingmagazine.com/" target="_blank">smashingmagazine.com</a> |
+            <a href="https://alistapart.com" target="_blank">alistapart.com</a> |
+            <a href="http://www.thisiscolossal.com/" target="_blank">thisiscolossal.com</a> and sometimes just for fun:
+            <a href="http://manbabies.com/" target="_blank">manbabies.com</a>
+          </p>
+          <p class="aboutMe__story">For a detailed CV please e-mail me:
+            <a class="emailLink" href="mailto:jamesjw01@gmail.com">jamesjw01@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Page -->
+    <section class="section u-flex-center section--bg-fixed footerPage">
+      <h1 class="header text3d">Thanks For
+        <br/> Visiting</h1>
+      <img class="icon-smiley" src="./assets/img/backgrounds/smiley.png" alt="Smiley face" />
+      <img class="doughnut" src="./assets/img/backgrounds/doughnut.png" alt="Doughnut illustration" />
+      <div class="footerCopyright">
+        <div class="col-sm-6">
+          <p class="text-left">Copyright © 2018 James Wilson. All Rights Reserved.</p>
+        </div>
+        <div class="col-sm-6 pull-right">
+          <p class="text-right">Version 2.0 | 18 February 2018 |
+            <a href="./humans.txt">Humans.txt</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
   <!-- SCRIPTS -->
-  <script type="text/javascript" src="./assets/plugins/onepage-scroll/jquery.onepage-scroll.js"></script>
   <script type="text/javascript">
-    $(document).ready(function () {
-      /* One Page Scroller */
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 1200,
-        loop: true
-      });
-    });
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
       i[r] = i[r] || function () {
