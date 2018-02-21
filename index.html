@@ -1,13 +1,30 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>James Wilson - Graphic Design Portfolio</title>
-  <meta name="description" content="My name is James Wilson, I'm a graphic designer with one year's experience in the clothing industry and seven years' in the print industry."
-  />
+  <meta name="description" content="An overview of my work experience as a Graphic Designer and Web Developer" />
   <meta name="robots" content="noimageindex" />
-  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Scripts -->
+  <script type="text/javascript" src="./assets/plugins/page-loader/queryloader2.min.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function () {
+      console.log('loading');
+      new QueryLoader2(document.querySelector("body"), {
+        barColor: "#efefef",
+        backgroundColor: "#111",
+        percentage: true,
+        barHeight: 1,
+        minimumTime: 200,
+        fadeOutTime: 100,
+        onComplete: function () {
+          console.log('finished');
+        }
+      });
+    });
+  </script>
   <link rel="author" href="./humans.txt" />
   <!-- Fav Icons -->
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
@@ -20,959 +37,393 @@
   <link rel="apple-touch-icon" sizes="144x144" href="./apple-touch-icon-144x144.png" />
   <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon-152x152.png" />
 
-
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-  <link href="./assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- CSS -->
-  <link href="./assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="./assets/plugins/onepage-scroll/onepage-scroll.css" rel="stylesheet" type="text/css">
-  <link href="./assets/plugins/slick-carousel/slick.css" rel="stylesheet" type="text/css">
-  <link href="./assets/plugins/slick-carousel/slick-theme.css" rel="stylesheet" type="text/css">
+  <link href="./assets/plugins/normalize/normalize.css" rel="stylesheet" type="text/css">
+  <link href="./assets/plugins/bootstrap/bootstrap-grid.css" rel="stylesheet" type="text/css">
+  <!-- <link href="./assets/plugins/onepage-scroll/onepage-scroll.css" rel="stylesheet" type="text/css"> -->
   <link href="./assets/css/styles.css" rel="stylesheet" type="text/css">
   <link href="./assets/css/extended-styles.css" rel="stylesheet" type="text/css">
+  <link href="./assets/css/slideshow.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="main">
-      <!-- Landing Page -->
-      <section class="landingPage">
-        <h1 class="text3d">Hello<br/>World</h1>
-        <h2>
-          welcome to my portfolio
-        </h2>
-      </section>
-      <!-- Compulutions Section -->
-      <section class="jobPage">
-        <div class="page_container">
-          <div class="work_showcase">
-            <!-- Compulutions Slide 1 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Compulutions</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">March 2015 - Current</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/compulutions/compulutions.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-12 text-center">
-                  <p style="text-align: center">Compulutions (Pty) Ltd is a web development company started by my friend
-                    <a href="http://craigvantonder.co.za/">Craig Van Tonder</a>. He had a growing need for a graphic designer who could move into front-end development.
-                    I am responsible for all Compulutions designs right down to the company logo.
-                    <br/>
-                    <a href="http://compulutions.co.za/" target="_blank">Visit compulutions.co.za</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Compulutions Slide 2 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Compulutions</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">March 2015 - Current</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/compulutions/freight-rush.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Graphic Design</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>Design a logo for newly established company called "Freight Rush". It was an instant hit with our client
-                    and I regard it as my most successful logo design. It's my personal favourite for its versatility and
-                    iconic appeal.</p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Compulutions Slide 3 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Compulutions</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">March 2015 - Current</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/compulutions/lcom.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Graphic design</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>Revamp the LCOM Communications brand. For LCOM I created a brand identity that attracted attention and
-                    was easily recognisable. A key goal I had in mind was to make them appear friendly and trustworthy.
-                    <a href="http://www.lcom.co.za/" target="_blank">Visit lcom.co.za</a>
-                  </p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Compulutions Slide 4 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Compulutions</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">March 2015 - Current</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/compulutions/nexgen.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Graphic design.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>NexgenSA is a growing company that needed an updated look. They provide services for small to large businesses
-                    so I aimed to create a universal and timeless corporate identity that would give them credibility as
-                    professionals.
-                  </p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Compulutions Slide 5 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Compulutions</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">March 2015 - Current</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/compulutions/androidgadgets.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Design in-house marketing materials.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>Presentation is key to marketing the services provided by Compulutions. I set out to design a template
-                    format that was instantly recognisable and easy to adjust for a variety of scenarios.
-                    <a href="https://www.facebook.com/compulutions" target="_blank">Visit facebook.com/compulutions</a>
-                  </p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Yesman Section -->
-      <section class="jobPage">
-        <div class="page_container">
-          <div class="work_showcase">
-            <!-- Yesman Slide 1 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">
-                    <span style="letter-spacing: -0.055em">Y</span>esman</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">July 2010 - February 2015</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/yesman/durban-tourism.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Prepare artwork for large format displays.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>As lead designer I took many initiatives that were instrumental in evolving an organised and professional
-                    printing workflow. My efforts were key to helping Yesman provide world class service and meet growing
-                    demand.
-                  </p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                    <li>
-                      <img title="Sketchup" Alt="SKP" src="./assets/img/program-icons/programs-used/sketchup.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Yesman Slide 2 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">
-                    <span style="letter-spacing: -0.045em">Y</span>esman</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">July 2010 - February 2015</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/yesman/avon.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Interpret brand ID to design a range of branding materials.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>I was tasked with designing a range for an Avon agent to use for her recruitment seminars. I researched
-                    Avons brand ID online and through their catalogues.</p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                    <li>
-                      <img title="Sketchup" Alt="SKP" src="./assets/img/program-icons/programs-used/sketchup.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Yesman Slide 3 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">
-                    <span style="letter-spacing: -0.055em">Y</span>esman</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">July 2010 - February 2015</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/yesman/gotv.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Create mockups for branding range proposals.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>A client required mockups for a GOtv event proposal. I used the GOtv website to source artwork and employed
-                    my Sketchup skills to create 3D mockups. The result of my extra effort was a very impressed and grateful
-                    customer.
-                  </p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                    <li>
-                      <img title="Sketchup" Alt="SKP" src="./assets/img/program-icons/programs-used/sketchup.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Yesman Slide 4 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">
-                    <span style="letter-spacing: -0.055em">Y</span>esman</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">July 2010 - February 2015</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/yesman/brochure-chapters.jpg" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Design in-house marketing materials.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>Work closely with the marketing department to produce an attractive product catalogue. The images that
-                    were supplied to me were lacklustre and dull and required extensive deep etching and photo-enhancement
-                    techniques.
-                  </p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe InDesign" Alt="ID" src="./assets/img/program-icons/programs-used/indesign.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Yesman Slide 5 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">
-                    <span style="letter-spacing: -0.055em">Y</span>esman</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">July 2010 - February 2015</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/yesman/brochure-products.jpg" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Design in-house marketing materials.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>Work closely with the marketing department to produce an attractive product catalogue. The images that
-                    were supplied to me were lacklustre and dull and required extensive deep etching and photo-enhancement
-                    techniques.
-                  </p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe InDesign" Alt="ID" src="./assets/img/program-icons/programs-used/indesign.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Hillcrest Signs Section -->
-      <section class="jobPage">
-        <div class="page_container">
-          <div class="work_showcase">
-            <!-- Hillcrest Signs Slide 1 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Hillcrest Signs</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">January 2008 - June 2010</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/hillcrest-signs/decals.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Prepare artwork for large format printing.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>One of my primary roles at Hillcrest Signs included vectorising artwork if it was supplied by a client
-                    in a low quality format. An expert level of workmanship and fast turn-around times were crucial.</p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="CorelDraw" Alt="CDR" src="./assets/img/program-icons/programs-used/coreldraw.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Hillcrest Signs Slide 2 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Hillcrest Signs</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">January 2008 - June 2010</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/hillcrest-signs/horse.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Prepare artwork for large format printing.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>One of my primary roles at Hillcrest Signs included vectorising artwork if it was supplied by a client
-                    in a low quality format. An expert level of workmanship and fast turn-around times were crucial.</p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="CorelDraw" Alt="CDR" src="./assets/img/program-icons/programs-used/coreldraw.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Hillcrest Signs Slide 3 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Hillcrest Signs</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">January 2008 - June 2010</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/hillcrest-signs/pillar-wraps.jpg" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Design large format displays.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>Design pillar wraps for Spar Supermarket. You may view the original images supplied by the client here:
-                    <a href="./assets/img/uploads/aquelle.jpg" target="_blank">Aquelle</a> and
-                    <a href="./assets/img/uploads/pepsi.jpg" target="_blank">Pepsi</a>.</p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                    <li>
-                      <img title="CorelDraw" Alt="CDR" src="./assets/img/program-icons/programs-used/coreldraw.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Hillcrest Signs Slide 4 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Hillcrest Signs</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">January 2008 - June 2010</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/hillcrest-signs/banners-2.jpg" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Design large format displays.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>Design 6mx2m banners for roadside displays. I was supplied with brand guidelines and images. The images
-                    needed a considerable amount of manipulation to compose them in the required dimensions.</p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                    <li>
-                      <img title="CorelDraw" Alt="CDR" src="./assets/img/program-icons/programs-used/coreldraw.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Hillcrest Signs Slide 5 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Hillcrest Signs</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">January 2008 - June 2010</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/hillcrest-signs/banners-1.jpg" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Design large format displays.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>Design 6mx2m banners for roadside displays. I was supplied with brand guidelines and images. The images
-                    needed a considerable amount of manipulation to compose them in the required dimensions.</p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                    <li>
-                      <img title="CorelDraw" Alt="CDR" src="./assets/img/program-icons/programs-used/coreldraw.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Anupi Section -->
-      <section class="jobPage">
-        <div class="page_container">
-          <div class="work_showcase">
-            <!-- Anupi Slide 1 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Anupi Clothing Distributors</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">August 2006 - December 2007</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/anupi/shirts-faces.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Design garment prints.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>For this project I was given free reign to design a range of prints for DFX Clothing. I was asked to create
-                    designs which would appeal to a teenage market. Splatter and grunge effects were trending at the time.</p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Anupi Slide 2 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Anupi Clothing Distributors</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">August 2006 - December 2007</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/anupi/shirts-abstract.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Design garment prints.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>For this project I was given free reign to design a range of prints for DFX Clothing. I was asked to create
-                    designs which would appeal to a teenage market. Splatter and grunge effects were trending at the time.</p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Anupi Slide 3 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Anupi Clothing Distributors</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">August 2006 - December 2007</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/anupi/shirts-skull.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Design garment prints.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>For this project I was given free reign to design a range of prints for DFX Clothing. I was asked to create
-                    designs which would appeal to a teenage market. Splatter and grunge effects were trending at the time.</p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Anupi Slide 4 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign">Anupi Clothing Distributors</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">August 2006 - December 2007</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/anupi/cads.png" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Create CADs for garment orders.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>Work closely with a newly established fashion design department to design stationery for their various
-                    needs. For this project I designed CAD templates and recreated technical drawings for garment orders.</p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Anupi Slide 5 -->
-            <div class="effect8">
-              <div class="col-sm-12 slide-header">
-                <div class="col-sm-6 jobPageHeading">
-                  <h1 class="company-name headingVerticalAlign text-left">Anupi Clothing Distributors</h1>
-                </div>
-                <div class="col-sm-6 text-right jobPageHeading">
-                  <h2 class="employment-time headingVerticalAlign text-right">August 2006 - December 2007</h2>
-                </div>
-              </div>
-              <div class="col-sm-12 slide-image">
-                <img src="./assets/img/slides/anupi/storyboards.jpg" class="img-responsive work_piece" />
-              </div>
-              <div class="col-sm-12 slide-caption">
-                <div class="col-sm-3">
-                  <h3>Job function:</h3>
-                  <p>Create storyboard presentations.</p>
-                </div>
-                <div class="col-sm-7">
-                  <h3>Project brief:</h3>
-                  <p>Work closely with fashion designers to research trends and create storyboard presentations. Images were
-                    scanned from catalogues and often required extensive deep etching to remove unwanted elements.</p>
-                </div>
-                <div class="col-sm-2">
-                  <h3>Programs used:</h3>
-                  <ul class="programs-list">
-                    <li>
-                      <img title="Adobe Illustrator" Alt="AI" src="./assets/img/program-icons/programs-used/illustrator.png" />
-                    </li>
-                    <li>
-                      <img title="Adobe Photoshop" Alt="PS" src="./assets/img/program-icons/programs-used/photoshop.png" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- About Me Page -->
-      <section class="aboutPage">
-        <div class="col-lg-8 about">
-          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 proficiencies">
-            <h1>Proficiencies</h1>
-            <ul class="proficiency-stats">
-              <li class="proficiency-stats__stat">
-                <object class="proficiency-stats__icon" type="image/svg+xml" data="./assets/img/program-icons/illustrator.svg" alt="Adobe Illustrator">
-                  <img src="./assets/img/program-icons/svg-fallback/illustrator.png" title="Adobe Illustrator">
-                </object>
-                <div class="proficiency-stats__bar" id="progressBarAI">
-                  <div></div>
-                </div>
-              </li>
+  <main class="main">
+    <!-- Landing Page -->
+    <section class="section u-flex-center landingPage">
+      <header>
+        <h1 class="header text3d">Hello<br/>World</h1>
+        <h2 clas="tsubheader ext-center">welcome to my portfolio</h2>
+      </header>
+    </section>
+    <!-- Mapstudio Section -->
+    <section class="section u-flex-center section--bg-fixed jobPage">
 
-              <li class="proficiency-stats__stat">
-                <object class="proficiency-stats__icon" type="image/svg+xml" data="./assets/img/program-icons/photoshop.svg">
-                  <img src="./assets/img/program-icons/svg-fallback/photoshop.png" title="Adobe Photoshop">
-                </object>
-                <div class="proficiency-stats__bar" id="progressBarPS">
-                  <div></div>
-                </div>
-              </li>
+      <article class='slideshow'>
+        <header class='slide-header'>
+          <h1 class='header slide-header__main'>Map Studio</h1>
+          <h2 class='subheader slide-header__sub'>Aug 2015 - Oct 2015</h2>
+        </header>
+        <input checked='checked' class='thumbnail-radio' id='thumbnail-ms-1' name='mapstudio' type='radio'>
+        <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-ms-1' style='background-image: url(./assets/img/slides/mapstudio/mapstudio-01.jpg)'>
+          Marketing
+          <span class='direction-hover__right' data-label='Marketing'></span>
+          <span class='direction-hover__left' data-label='Marketing'></span>
+          <span class='direction-hover__top' data-label='Marketing'></span>
+          <span class='direction-hover__bottom' data-label='Marketing'></span>
+        </label>
 
-              <li class="proficiency-stats__stat">
-                <object class="proficiency-stats__icon" type="image/svg+xml" data="./assets/img/program-icons/indesign.svg">
-                  <img src="./assets/img/program-icons/svg-fallback/indesign.png" title="Adobe InDesign">
-                </object>
-                <div class="proficiency-stats__bar" id="progressBarID">
-                  <div></div>
-                </div>
-              </li>
-
-              <li class="proficiency-stats__stat">
-                <object class="proficiency-stats__icon" type="image/svg+xml" data="./assets/img/program-icons/sketchup.svg">
-                  <img src="./assets/img/program-icons/svg-fallback/sketchup.png" title="Sketchup">
-                </object>
-                <div class="proficiency-stats__bar" id="progressBarSKP">
-                  <div></div>
-                </div>
-              </li>
-
-              <li class="proficiency-stats__stat">
-                <object class="proficiency-stats__icon" type="image/svg+xml" data="./assets/img/program-icons/html.svg">
-                  <img src="./assets/img/program-icons/svg-fallback/html.png" title="HTML5">
-                </object>
-                <div class="proficiency-stats__bar" id="progressBarHTML">
-                  <div></div>
-                </div>
-              </li>
-
-              <li class="proficiency-stats__stat">
-                <object class="proficiency-stats__icon" type="image/svg+xml" data="./assets/img/program-icons/css.svg">
-                  <img src="./assets/img/program-icons/svg-fallback/css.png" title="CSS3">
-                </object>
-                <div class="proficiency-stats__bar" id="progressBarCSS">
-                  <div></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 aboutMe">
-            <h1>About Me</h1>
-            <p class="aboutMe__story">My name is James Wilson, I'm a graphic designer with one year's experience in the clothing industry and seven
-              years' in the print industry. My first job before pursuing a career in graphic design was working for my brother
-              in carpentry. He designs and manufactures
-              <a href="http://www.designindaba.com/profiles/skog-kids">award-winning</a> furniture and I am grateful for my formative years spent with him as I learnt the value of
-              exceptional workmanship. Throughout my career I have always gone the extra mile and it's through my efforts
-              and hard work ethic that I earned the respect of my colleagues and became the leader of a world-class printing
-              department at
-              <a href="http://yesman.co.za/">Yesman</a>. I enjoy creating brands and find great reward in creating something that hits the mark for the
-              client in more ways than one. I have a passion for all things creative, so when I'm not working hard to make
-              the world more beautiful you can find me spending endless hours on the internet either reading or admiring
-              awesome designs. My favourite sites are:
-              <a href="http://www.smashingmagazine.com/" target="_blank">smashingmagazine.com</a> |
-              <a href="http://www.visualnews.com/" target="_blank">visualnews.com</a> |
-              <a href="http://www.thisiscolossal.com/" target="_blank">thisiscolossal.com</a> and sometimes just for fun:
-              <a href="http://manbabies.com/" target="_blank">manbabies.com</a>
-            </p>
-            <p class="aboutMe__story">For a detailed CV please e-mail me at:
-              <a class="emailLink" href="mailto:hello@jameswilson.co.za">hello@jameswilson.co.za</a>
-            </p>
-          </div>
+        <input class='thumbnail-radio' id='thumbnail-ms-2' name='mapstudio' type='radio'>
+        <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-ms-2' style='background-image: url(./assets/img/slides/mapstudio/mapstudio-02.png)'>
+          Marketing
+          <span class='direction-hover__right' data-label='Marketing'></span>
+          <span class='direction-hover__left' data-label='Marketing'></span>
+          <span class='direction-hover__top' data-label='Marketing'></span>
+          <span class='direction-hover__bottom' data-label='Marketing'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-ms-3' name='mapstudio' type='radio'>
+        <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-ms-3' style='background-image: url(./assets/img/slides/mapstudio/mapstudio-03.jpg)'>
+          Posters
+          <span class='direction-hover__right' data-label='Posters'></span>
+          <span class='direction-hover__left' data-label='Posters'></span>
+          <span class='direction-hover__top' data-label='Posters'></span>
+          <span class='direction-hover__bottom' data-label='Posters'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-ms-4' name='mapstudio' type='radio'>
+        <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-ms-4' style='background-image: url(./assets/img/slides/mapstudio/mapstudio-04.jpg)'>
+          Web Catalogue
+          <span class='direction-hover__right' data-label='Web Catalogue'></span>
+          <span class='direction-hover__left' data-label='Web Catalogue'></span>
+          <span class='direction-hover__top' data-label='Web Catalogue'></span>
+          <span class='direction-hover__bottom' data-label='Web Catalogue'></span>
+        </label>
+        <img class='main-image' id='main-ms-1' src='./assets/img/slides/mapstudio/mapstudio-01.jpg' alt='Web banners' />
+        <img class='main-image' id='main-ms-2' src='./assets/img/slides/mapstudio/mapstudio-02.png' alt='Social media posts' />
+        <img class='main-image' id='main-ms-3' src='./assets/img/slides/mapstudio/mapstudio-03.jpg' alt='Posters' />
+        <img class='main-image' id='main-ms-4' src='./assets/img/slides/mapstudio/mapstudio-04.jpg' alt='Posters' />
+        <div class='description'>
+          <p class='description__slide'>
+            MapStudio has been the leading publisher and distributor of maps, travel and lifestyle publications in Africa for over 55
+            years. I worked closely with the marketing team to support all marketing and sales efforts.
+          </p>
         </div>
-      </section>
-      <!-- Footer Page -->
-      <section class="footerPage">
-        <h1 class="text3d">
-          Thanks For
-          <br/> Visiting
-        </h1>
-        <span class="icon-smiley text3d"></span>
-        <img class="hidden-xs hidden-sm doughnut" src="./assets/img/backgrounds/doughnut.png" />
-        <div class="footerCopyright">
-          <div class="col-sm-6">
-            <p class="text-left">Copyright © 2015 James Wilson. All Rights Reserved.</p>
-          </div>
-          <div class="col-sm-6 pull-right">
-            <p class="text-right">Version 1.0 | 9 July 2015 |
-              <a href="./humans.txt">Humans.txt</a>
-            </p>
-          </div>
+      </article>
+    </section>
+    <!-- Compulutions Section -->
+    <section class="section u-flex-center section--bg-fixed jobPage">
+      <article class='slideshow'>
+        <header class='slide-header'>
+          <h1 class='header slide-header__main'>Compulutions</h1>
+          <h2 class='subheader slide-header__sub'>Mar 2015 - Jul 2015</h2>
+        </header>
+        <input checked='checked' class='thumbnail-radio' id='thumbnail-com-1' name='compulutions' type='radio'>
+        <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-com-1' style='background-image: url(./assets/img/slides/compulutions/compulutions.png)'>
+          Brand ID
+          <span class='direction-hover__right' data-label='Brand ID'></span>
+          <span class='direction-hover__left' data-label='Brand ID'></span>
+          <span class='direction-hover__top' data-label='Brand ID'></span>
+          <span class='direction-hover__bottom' data-label='Brand ID'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-com-2' name='compulutions' type='radio'>
+        <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-com-2' style='background-image: url(./assets/img/slides/compulutions/freight-rush.png)'>
+          Brand ID
+          <span class='direction-hover__right' data-label='Brand ID'></span>
+          <span class='direction-hover__left' data-label='Brand ID'></span>
+          <span class='direction-hover__top' data-label='Brand ID'></span>
+          <span class='direction-hover__bottom' data-label='Brand ID'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-com-3' name='compulutions' type='radio'>
+        <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-com-3' style='background-image: url(./assets/img/slides/compulutions/lcom.png)'>
+          Brand ID
+          <span class='direction-hover__right' data-label='Brand ID'></span>
+          <span class='direction-hover__left' data-label='Brand ID'></span>
+          <span class='direction-hover__top' data-label='Brand ID'></span>
+          <span class='direction-hover__bottom' data-label='Brand ID'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-com-4' name='compulutions' type='radio'>
+        <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-com-4' style='background-image: url(./assets/img/slides/compulutions/nexgen.png)'>
+          Brand ID
+          <span class='direction-hover__right' data-label='Brand ID'></span>
+          <span class='direction-hover__left' data-label='Brand ID'></span>
+          <span class='direction-hover__top' data-label='Brand ID'></span>
+          <span class='direction-hover__bottom' data-label='Brand ID'></span>
+        </label>
+        <img class='main-image' id='main-com-1' src='./assets/img/slides/compulutions/compulutions.png' alt='Compulutions Logo' />
+        <img class='main-image' id='main-com-2' src='./assets/img/slides/compulutions/freight-rush.png' alt='Freight Rush' />
+        <img class='main-image' id='main-com-3' src='./assets/img/slides/compulutions/lcom.png' alt='Lcom Vehicle Branding' />
+        <img class='main-image' id='main-com-4' src='./assets/img/slides/compulutions/nexgen.png' alt='Nexgen Business Cards' />
+        <div class='description'>
+          <p class='description__slide'>
+            I worked in partnership with back-end developer and founder of
+            <a href="https://compulutions.co.za/" target="_blank">Compulutions (PTY) Ltd</a> to offer quality design and development services.
+          </p>
         </div>
-      </section>
-    </div>
-  </div>
+      </article>
+    </section>
+    <!-- Yesman Section -->
+    <section class="section u-flex-center section--bg-fixed jobPage">
+      <article class='slideshow'>
+        <header class='slide-header'>
+          <h1 class='header slide-header__main'>Yesman</h1>
+          <h2 class='subheader slide-header__sub'>Jul 2010 - Feb 2015</h2>
+        </header>
+        <input checked='checked' class='thumbnail-radio' id='thumbnail-ym-1' name='yesman' type='radio'>
+        <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-ym-1' style='background-image: url(./assets/img/slides/yesman/brands.png)'>
+          DTP
+          <span class='direction-hover__right' data-label='DTP'></span>
+          <span class='direction-hover__left' data-label='DTP'></span>
+          <span class='direction-hover__top' data-label='DTP'></span>
+          <span class='direction-hover__bottom' data-label='DTP'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-ym-2' name='yesman' type='radio'>
+        <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-ym-2' style='background-image: url(./assets/img/slides/yesman/gotv.png)'>
+          3D Mockups
+          <span class='direction-hover__right' data-label='3D Mockups'></span>
+          <span class='direction-hover__left' data-label='3D Mockups'></span>
+          <span class='direction-hover__top' data-label='3D Mockups'></span>
+          <span class='direction-hover__bottom' data-label='3D Mockups'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-ym-3' name='yesman' type='radio'>
+        <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-ym-3' style='background-image: url(./assets/img/slides/yesman/brochure-chapters.jpg)'>
+          Inhouse Marketing
+          <span class='direction-hover__right' data-label='Inhouse Marketing'></span>
+          <span class='direction-hover__left' data-label='Inhouse Marketing'></span>
+          <span class='direction-hover__top' data-label='Inhouse Marketing'></span>
+          <span class='direction-hover__bottom' data-label='Inhouse Marketing'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-ym-4' name='yesman' type='radio'>
+        <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-ym-4' style='background-image: url(./assets/img/slides/yesman/brochure-products.jpg)'>
+          Brochure
+          <span class='direction-hover__right' data-label='Brochure'></span>
+          <span class='direction-hover__left' data-label='Brochure'></span>
+          <span class='direction-hover__top' data-label='Brochure'></span>
+          <span class='direction-hover__bottom' data-label='Brochure'></span>
+        </label>
+        <img class='main-image' id='main-ym-1' src='./assets/img/slides/yesman/brands.png' alt='Yesman Clients' />
+        <img class='main-image' id='main-ym-2' src='./assets/img/slides/yesman/gotv.png' alt='3D Mocukups for clients' />
+        <img class='main-image' id='main-ym-3' src='./assets/img/slides/yesman/brochure-chapters.jpg' alt='Yesman brochure design'
+        />
+        <img class='main-image' id='main-ym-4' src='./assets/img/slides/yesman/brochure-products.jpg' alt='Yesman brochure design'
+        />
+        <div class='description'>
+          <p class='description__slide'>
+            As lead designer at
+            <a href="https://www.yesman.co.za/" target="_blank">Yesman</a> I took many initiatives that were instrumental in evolving an organised and professional printing
+            workflow. My efforts were key to helping Yesman provide world class service and meet growing demand.
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- Hillcrest Signs Section -->
+    <section class="section u-flex-center section--bg-fixed jobPage">
+      <article class='slideshow'>
+        <header class='slide-header'>
+          <h1 class='header slide-header__main'>Hillcrest Signs</h1>
+          <h2 class='subheader slide-header__sub'>Jan 2008 - Jun 2010</h2>
+        </header>
+        <input checked='checked' class='thumbnail-radio' id='thumbnail-hs-1' name='hillcrest-signs' type='radio'>
+        <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-hs-1' style='background-image: url(./assets/img/slides/hillcrest-signs/decals.png)'>
+          Vehicle Decals
+          <span class='direction-hover__right' data-label='Vehicle Decals'></span>
+          <span class='direction-hover__left' data-label='Vehicle Decals'></span>
+          <span class='direction-hover__top' data-label='Vehicle Decals'></span>
+          <span class='direction-hover__bottom' data-label='Vehicle Decals'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-hs-2' name='hillcrest-signs' type='radio'>
+        <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-hs-2' style='background-image: url(./assets/img/slides/hillcrest-signs/horse.png)'>
+          Stickers
+          <span class='direction-hover__right' data-label='Stickers'></span>
+          <span class='direction-hover__left' data-label='Stickers'></span>
+          <span class='direction-hover__top' data-label='Stickers'></span>
+          <span class='direction-hover__bottom' data-label='Stickers'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-hs-3' name='hillcrest-signs' type='radio'>
+        <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-hs-3' style='background-image: url(./assets/img/slides/hillcrest-signs/banners-1.jpg)'>
+          Banners
+          <span class='direction-hover__right' data-label='Banners'></span>
+          <span class='direction-hover__left' data-label='Banners'></span>
+          <span class='direction-hover__top' data-label='Banners'></span>
+          <span class='direction-hover__bottom' data-label='Banners'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-hs-4' name='hillcrest-signs' type='radio'>
+        <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-hs-4' style='background-image: url(./assets/img/slides/hillcrest-signs/banners-2.jpg)'>
+          Banners
+          <span class='direction-hover__right' data-label='Banners'></span>
+          <span class='direction-hover__left' data-label='Banners'></span>
+          <span class='direction-hover__top' data-label='Banners'></span>
+          <span class='direction-hover__bottom' data-label='Banners'></span>
+        </label>
+        <img class='main-image' id='main-hs-1' src='./assets/img/slides/hillcrest-signs/decals.png' alt='Vehicle decals' />
+        <img class='main-image' id='main-hs-2' src='./assets/img/slides/hillcrest-signs/horse.png' alt='Sticker design of a cartoon horse'
+        />
+        <img class='main-image' id='main-hs-3' src='./assets/img/slides/hillcrest-signs/banners-1.jpg' alt='Banner designs' />
+        <img class='main-image' id='main-hs-4' src='./assets/img/slides/hillcrest-signs/banners-2.jpg' alt='Banner designs' />
+        <div class='description'>
+          <p class='description__slide'>
+            At Hillcrest Signs I worked as a store clerk and DTP operator. I was completely unsupervised and delivered under pressure
+            with very short deadlines.
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- Anupi Section -->
+    <section class="section u-flex-center section--bg-fixed jobPage">
+      <article class='slideshow'>
+        <header class='slide-header'>
+          <h1 class='header slide-header__main'>Anupi</h1>
+          <h2 class='subheader slide-header__sub'>Aug 2006 - Dec 2007</h2>
+        </header>
+        <input checked='checked' class='thumbnail-radio' id='thumbnail-anu-1' name='anupi' type='radio'>
+        <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-anu-1' style='background-image: url(./assets/img/slides/anupi/shirts-faces.png)'>
+          Garment Prints
+          <span class='direction-hover__right' data-label='Garment Prints'></span>
+          <span class='direction-hover__left' data-label='Garment Prints'></span>
+          <span class='direction-hover__top' data-label='Garment Prints'></span>
+          <span class='direction-hover__bottom' data-label='Garment Prints'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-anu-2' name='anupi' type='radio'>
+        <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-anu-2' style='background-image: url(./assets/img/slides/anupi/shirts-abstract.png)'>
+          Garment Prints
+          <span class='direction-hover__right' data-label='Garment Prints'></span>
+          <span class='direction-hover__left' data-label='Garment Prints'></span>
+          <span class='direction-hover__top' data-label='Garment Prints'></span>
+          <span class='direction-hover__bottom' data-label='Garment Prints'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-anu-3' name='anupi' type='radio'>
+        <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-anu-3' style='background-image: url(./assets/img/slides/anupi/cads.png)'>
+          Product CADs
+          <span class='direction-hover__right' data-label='Product CADs'></span>
+          <span class='direction-hover__left' data-label='Product CADs'></span>
+          <span class='direction-hover__top' data-label='Product CADs'></span>
+          <span class='direction-hover__bottom' data-label='Product CADs'></span>
+        </label>
+        <input class='thumbnail-radio' id='thumbnail-anu-4' name='anupi' type='radio'>
+        <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-anu-4' style='background-image: url(./assets/img/slides/anupi/storyboards.jpg)'>
+          Storyboards
+          <span class='direction-hover__right' data-label='Storyboards'></span>
+          <span class='direction-hover__left' data-label='Storyboards'></span>
+          <span class='direction-hover__top' data-label='Storyboards'></span>
+          <span class='direction-hover__bottom' data-label='Storyboards'></span>
+        </label>
+        <img class='main-image' id='main-anu-1' src='./assets/img/slides/anupi/shirts-faces.png' alt='Abstract t-shirt design' />
+        <img class='main-image' id='main-anu-2' src='./assets/img/slides/anupi/shirts-abstract.png' alt='Abstract t-shirt design' />
+        <img class='main-image' id='main-anu-3' src='./assets/img/slides/anupi/cads.png' alt='Garment technical CADs' />
+        <img class='main-image' id='main-anu-4' src='./assets/img/slides/anupi/storyboards.jpg' alt='Clothing range storyboard presentations' />
+        <div class='description'>
+          <p class='description__slide'>
+            I held a leading position in a team of young fashion designers in a newly established design department. Anupi was a clothing
+            distributor for companies such as Mr Price, The Hub and Ackermans.
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- About Me Page -->
+    <section class="section u-flex-center aboutPage">
+      <div class="col-lg-8 about">
+        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 proficiencies">
+          <h1 class="about__header header">Proficiencies</h1>
+          <ul class="proficiency-stats">
+            <li class="proficiency-stats__stat">
+              <img class="profiency-stats__icon" src="./assets/img/program-icons/illustrator.png" title="Adobe Illustrator" alt="Adobe Illustrator Icon"/>
+              <div class="proficiency-stats__bar">
+                <div class="proficiency-stats__percentage-wrap">
+                  <div class="proficiency-stats__percentage" style="transform: translateX(0)">100%</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="proficiency-stats__stat">
+              <img class="profiency-stats__icon" src="./assets/img/program-icons/photoshop.png" title="Adobe Photoshop" alt="Adobe Photoshop Icon"/>
+              <div class="proficiency-stats__bar">
+                <div class="proficiency-stats__percentage-wrap">
+                  <div class="proficiency-stats__percentage" style="transform: translateX(-10%)">90%</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="proficiency-stats__stat">
+              <img class="profiency-stats__icon" src="./assets/img/program-icons/indesign.png" title="Adobe InDesign" alt="Adobe Indesign Icon"/>
+              <div class="proficiency-stats__bar">
+                <div class="proficiency-stats__percentage-wrap">
+                  <div class="proficiency-stats__percentage" style="transform: translateX(-20%)">80%</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="proficiency-stats__stat">
+              <img class="proficiency-stats__icon" src="./assets/img/program-icons/html.png" title="HTML5" alt="HTML5 Icon" />
+              <div class="proficiency-stats__bar">
+                <div class="proficiency-stats__percentage-wrap">
+                  <div class="proficiency-stats__percentage" style="transform: translateX(-20%)">80%</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="proficiency-stats__stat">
+              <img class="proficiency-stats__icon" src="./assets/img/program-icons/css.png" title="CSS3" alt="CSS3 Icon" />
+              <div class="proficiency-stats__bar">
+                <div class="proficiency-stats__percentage-wrap">
+                  <div class="proficiency-stats__percentage" style="transform: translateX(-10%)">90%</div>
+                </div>
+              </div>
+            </li>
+            <li class="proficiency-stats__stat">
+              <img class="profiency-stats__icon" src="./assets/img/program-icons/javascript.png" title="JavaScript" alt="Javascript Icon"/>
+              <div class="proficiency-stats__bar">
+                <div class="proficiency-stats__percentage-wrap">
+                  <div class="proficiency-stats__percentage" style="transform: translateX(-40%)">60%</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 aboutMe">
+          <h1 class="about__header header">About Me</h1>
+          <p class="aboutMe__story">I'm a graphic designer and web developer with over ten years' combined experience. My first job, before pursuing
+            a career in graphic design, was working for my brother as a carpenter. He designs and manufactures
+            <a href="http://houtlander.co.za/" target="_blank">award-winning</a> furniture and I'm grateful for my formative years spent with him as I learned the value of
+            exceptional workmanship.</p>
+          <p class="aboutMe__story"> Through hard work, passion and determination I became the leader of a world class printing department at
+            <a href="http://www.yesman.co.za/" target="_blank">Yesman</a>. From there I dived into web development and came to join
+            <a href="http://www.zailab.com/" target="_blank">ZaiLab</a> - an amazing tech startup set to revolutionise the call center industry.</p>
+          <p class="aboutMe__story">When I'm not working hard to make the web more beautiful you can find me spending endless hours reading about best
+            practices, the latest trends or admiring awesome designs.</p>
+          <p class="aboutMe__story">
+            My favourite sites are:
+            <a href="http://www.smashingmagazine.com/" target="_blank">smashingmagazine.com</a> |
+            <a href="https://alistapart.com" target="_blank">alistapart.com</a> |
+            <a href="http://www.thisiscolossal.com/" target="_blank">thisiscolossal.com</a> and sometimes just for fun:
+            <a href="http://manbabies.com/" target="_blank">manbabies.com</a>
+          </p>
+          <p class="aboutMe__story">For a detailed CV please e-mail me:
+            <a class="emailLink" href="mailto:jamesjw01@gmail.com">jamesjw01@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Page -->
+    <section class="section u-flex-center section--bg-fixed footerPage">
+      <h1 class="header text3d">Thanks For
+        <br/> Visiting</h1>
+      <img class="icon-smiley" src="./assets/img/backgrounds/smiley.png" alt="Smiley face" />
+      <img class="doughnut" src="./assets/img/backgrounds/doughnut.png" alt="Doughnut illustration" />
+      <div class="footerCopyright">
+        <div class="col-sm-6">
+          <p class="text-left">Copyright © 2018 James Wilson. All Rights Reserved.</p>
+        </div>
+        <div class="col-sm-6 pull-right">
+          <p class="text-right">Version 2.0 | 18 February 2018 |
+            <a href="./humans.txt">Humans.txt</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
   <!-- SCRIPTS -->
-  <script type="text/javascript" src="./assets/plugins/page-loader/queryloader2.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="./assets/plugins/jquery/jquery-1.11.1.min.js"><\/script>')
-  </script>
   <script type="text/javascript">
-    window.addEventListener('DOMContentLoaded', function () {
-      new QueryLoader2(document.querySelector("body"), {
-        barColor: "#efefef",
-        backgroundColor: "#111",
-        percentage: true,
-        barHeight: 1,
-        minimumTime: 200,
-        fadeOutTime: 100,
-        onComplete: function () {}
-      });
-    });
-  </script>
-  <script type="text/javascript" src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="./assets/plugins/onepage-scroll/jquery.onepage-scroll.js"></script>
-  <script type="text/javascript" src="./assets/plugins/slick-carousel/slick.min.js"></script>
-  <script type="text/javascript" src="./assets/plugins/progressbar/progressbar.js"></script>
-  <script type="text/javascript" src="./assets/plugins/easypiechart/jquery.easypiechart.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      /* One Page Scroller */
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 1200,
-        loop: true
-      });
-      /* Slick Carsousel */
-      $(".work_showcase").slick({
-        cssEase: 'linear',
-        dots: true,
-        infinite: false,
-        speed: 500,
-        fade: true
-      });
-    });
-    /* Progressbar */
-    progressBar(90, $('#progressBarAI'));
-    progressBar(80, $('#progressBarPS'));
-    progressBar(60, $('#progressBarID'));
-    progressBar(50, $('#progressBarSKP'));
-    progressBar(40, $('#progressBarHTML'));
-    progressBar(30, $('#progressBarCSS'));
-    /* Google Analytics */
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
       i[r] = i[r] || function () {
