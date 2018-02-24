@@ -215,6 +215,13 @@ a:focus {
 .proficiencies {
   display: flex;
   flex-direction: column;
+  margin-top: 6vh;
+}
+
+@media (min-width: 1200px) {
+  .proficiencies {
+    margin-top: 0;
+  }
 }
 
 .proficiency-stats {
@@ -327,14 +334,17 @@ a:focus {
   width: 100%;
   background-color: rgb(60, 60, 60);
   color: rgba(255, 255, 255, .3);
-  padding: 3px;
+  padding: 0 8px;
   position: absolute;
   bottom: 0;
+  display: flex;
+  min-height: 24px;
 }
 
 .footerCopyright p {
   margin: 0;
   font-size: .75em;
+  line-height: 20px;
 }
 
 .footerCopyright a:hover,
