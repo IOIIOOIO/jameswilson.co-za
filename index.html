@@ -7,24 +7,6 @@
   <meta name="description" content="An overview of my work experience as a Graphic Designer and Web Developer" />
   <meta name="robots" content="noimageindex" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Scripts -->
-  <script type="text/javascript" src="./assets/plugins/page-loader/queryloader2.min.js"></script>
-  <script type="text/javascript">
-    window.addEventListener('DOMContentLoaded', function () {
-      console.log('loading');
-      new QueryLoader2(document.querySelector("body"), {
-        barColor: "#efefef",
-        backgroundColor: "#111",
-        percentage: true,
-        barHeight: 1,
-        minimumTime: 200,
-        fadeOutTime: 100,
-        onComplete: function () {
-          console.log('finished');
-        }
-      });
-    });
-  </script>
   <link rel="author" href="./humans.txt" />
   <!-- Fav Icons -->
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
@@ -43,49 +25,96 @@
   <!-- CSS -->
   <link href="./assets/plugins/normalize/normalize.css" rel="stylesheet" type="text/css">
   <link href="./assets/plugins/bootstrap/bootstrap-grid.css" rel="stylesheet" type="text/css">
-  <!-- <link href="./assets/plugins/onepage-scroll/onepage-scroll.css" rel="stylesheet" type="text/css"> -->
   <link href="./assets/css/styles.css" rel="stylesheet" type="text/css">
   <link href="./assets/css/extended-styles.css" rel="stylesheet" type="text/css">
   <link href="./assets/css/slideshow.css" rel="stylesheet" type="text/css">
 
+  <style>
+    .preloader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      background-color: black;
+      z-index: 100;
+    }
+
+    .preloader__dot {
+      border-radius: 100%;
+      background: red;
+      width: 10px;
+      height: 10px;
+      margin: 3px 2px;
+      animation: preloader5 0.8s linear infinite alternate;
+    }
+
+    .preloader__dot:nth-child(1) {
+      animation-delay: -0.8s;
+    }
+
+    .preloader__dot:nth-child(2) {
+      animation-delay: -0.53333s;
+    }
+
+    .preloader__dot:nth-child(3) {
+      animation-delay: -0.26666s;
+    }
+
+    @keyframes preloader5 {
+      from {
+        transform: scale(0, 0);
+      }
+      to {
+        transform: scale(1, 1);
+      }
+    }
+  </style>
+
 </head>
 
-<body>
-  <main class="main">
+<body style="overflow: hidden;">
+  <div class="preloader" id="js-preloader">
+    <span class="preloader__dot"></span>
+    <span class="preloader__dot"></span>
+    <span class="preloader__dot"></span>
+  </div>
+  <main class="main" id="main">
     <!-- Landing Page -->
     <section class="section u-flex-center landingPage">
       <header>
         <h1 class="header text3d">Hello<br/>World</h1>
-        <h2 clas="tsubheader ext-center">welcome to my portfolio</h2>
+        <h2 clas="sub-header ext-center">welcome to my portfolio</h2>
       </header>
     </section>
-    <!-- Mapstudio Section -->
-    <section class="section u-flex-center section--bg-fixed jobPage">
 
+    <section class="section u-flex-center section--bg-fixed jobPage">
+      <h1 class="u-hidden">Portfolio</h1>
       <article class='slideshow'>
         <header class='slide-header'>
           <h1 class='header slide-header__main'>Map Studio</h1>
-          <h2 class='subheader slide-header__sub'>Aug 2015 - Oct 2015</h2>
+          <h2 class='sub-header slide-header__sub'>Aug 2015 - Oct 2015</h2>
         </header>
         <input checked='checked' class='thumbnail-radio' id='thumbnail-ms-1' name='mapstudio' type='radio'>
-        <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-ms-1' style='background-image: url(./assets/img/slides/mapstudio/web-banners.png)'>
-          Web Banners
-          <span class='direction-hover__right' data-label='Web Banners'></span>
-          <span class='direction-hover__left' data-label='Web Banners'></span>
-          <span class='direction-hover__top' data-label='Web Banners'></span>
-          <span class='direction-hover__bottom' data-label='Web Banners'></span>
+        <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-ms-1' style='background-image: url(./assets/img/slides/mapstudio/mapstudio-01.jpg)'>
+          Marketing
+          <span class='direction-hover__right' data-label='Marketing'></span>
+          <span class='direction-hover__left' data-label='Marketing'></span>
+          <span class='direction-hover__top' data-label='Marketing'></span>
+          <span class='direction-hover__bottom' data-label='Marketing'></span>
         </label>
 
         <input class='thumbnail-radio' id='thumbnail-ms-2' name='mapstudio' type='radio'>
-        <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-ms-2' style='background-image: url(./assets/img/slides/mapstudio/facebook-posts.png)'>
-          Social Media
-          <span class='direction-hover__right' data-label='Social Media'></span>
-          <span class='direction-hover__left' data-label='Social Media'></span>
-          <span class='direction-hover__top' data-label='Social Media'></span>
-          <span class='direction-hover__bottom' data-label='Social Media'></span>
+        <label class='thumbnail thumbnail-2 direction-hover' for='thumbnail-ms-2' style='background-image: url(./assets/img/slides/mapstudio/mapstudio-02.png)'>
+          Marketing
+          <span class='direction-hover__right' data-label='Marketing'></span>
+          <span class='direction-hover__left' data-label='Marketing'></span>
+          <span class='direction-hover__top' data-label='Marketing'></span>
+          <span class='direction-hover__bottom' data-label='Marketing'></span>
         </label>
         <input class='thumbnail-radio' id='thumbnail-ms-3' name='mapstudio' type='radio'>
-        <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-ms-3' style='background-image: url(./assets/img/slides/mapstudio/posters.png)'>
+        <label class='thumbnail thumbnail-3 direction-hover' for='thumbnail-ms-3' style='background-image: url(./assets/img/slides/mapstudio/mapstudio-03.jpg)'>
           Posters
           <span class='direction-hover__right' data-label='Posters'></span>
           <span class='direction-hover__left' data-label='Posters'></span>
@@ -93,32 +122,29 @@
           <span class='direction-hover__bottom' data-label='Posters'></span>
         </label>
         <input class='thumbnail-radio' id='thumbnail-ms-4' name='mapstudio' type='radio'>
-        <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-ms-4' style='background-image: url(./assets/img/slides/mapstudio/posters-promotions.png)'>
-          Posters
-          <span class='direction-hover__right' data-label='Posters'></span>
-          <span class='direction-hover__left' data-label='Posters'></span>
-          <span class='direction-hover__top' data-label='Posters'></span>
-          <span class='direction-hover__bottom' data-label='Posters'></span>
+        <label class='thumbnail thumbnail--no-spacer thumbnail-4 direction-hover' for='thumbnail-ms-4' style='background-image: url(./assets/img/slides/mapstudio/mapstudio-04.jpg)'>
+          Web Catalogue
+          <span class='direction-hover__right' data-label='Web Catalogue'></span>
+          <span class='direction-hover__left' data-label='Web Catalogue'></span>
+          <span class='direction-hover__top' data-label='Web Catalogue'></span>
+          <span class='direction-hover__bottom' data-label='Web Catalogue'></span>
         </label>
-        <img class='main-image' id='main-ms-1' src='./assets/img/slides/mapstudio/web-banners.png' alt='Web banners' />
-        <img class='main-image' id='main-ms-2' src='./assets/img/slides/mapstudio/facebook-posts.png' alt='Social media posts' />
-        <img class='main-image' id='main-ms-3' src='./assets/img/slides/mapstudio/posters.png' alt='Posters' />
-        <img class='main-image' id='main-ms-4' src='./assets/img/slides/mapstudio/posters-promotions.png' alt='Posters' />
+        <img class='main-image' id='main-ms-1' src='./assets/img/slides/mapstudio/mapstudio-01.jpg' alt='Web banners' />
+        <img class='main-image' id='main-ms-2' src='./assets/img/slides/mapstudio/mapstudio-02.png' alt='Social media posts' />
+        <img class='main-image' id='main-ms-3' src='./assets/img/slides/mapstudio/mapstudio-03.jpg' alt='Posters' />
+        <img class='main-image' id='main-ms-4' src='./assets/img/slides/mapstudio/mapstudio-04.jpg' alt='Posters' />
         <div class='description'>
           <p class='description__slide'>
             MapStudio has been the leading publisher and distributor of maps, travel and lifestyle publications in Africa for over 55
-            years. I worked with the marketing team to support all marketing and sales efforts. I planned projects and took
-            full ownership of work allocated to me.
+            years. I worked closely with the marketing team to support all marketing and sales efforts.
           </p>
         </div>
       </article>
-    </section>
-    <!-- Compulutions Section -->
-    <section class="section u-flex-center section--bg-fixed jobPage">
+      <!-- Compulutions Section -->
       <article class='slideshow'>
         <header class='slide-header'>
           <h1 class='header slide-header__main'>Compulutions</h1>
-          <h2 class='subheader slide-header__sub'>Mar 2015 - Jul 2015</h2>
+          <h2 class='sub-header slide-header__sub'>Mar 2015 - Jul 2015</h2>
         </header>
         <input checked='checked' class='thumbnail-radio' id='thumbnail-com-1' name='compulutions' type='radio'>
         <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-com-1' style='background-image: url(./assets/img/slides/compulutions/compulutions.png)'>
@@ -159,18 +185,15 @@
         <div class='description'>
           <p class='description__slide'>
             I worked in partnership with back-end developer and founder of
-            <a href="https://compulutions.co.za/" target="_blank">Compulutions (PTY) Ltd</a> to offer quality web development services. During my time with Compulutions I believe
-            I proved my ability as a creative Graphic and Web Designer.
+            <a href="https://compulutions.co.za/" target="_blank">Compulutions (PTY) Ltd</a> to offer quality design and development services.
           </p>
         </div>
       </article>
-    </section>
-    <!-- Yesman Section -->
-    <section class="section u-flex-center section--bg-fixed jobPage">
+      <!-- Yesman Section -->
       <article class='slideshow'>
         <header class='slide-header'>
           <h1 class='header slide-header__main'>Yesman</h1>
-          <h2 class='subheader slide-header__sub'>Jul 2010 - Feb 2015</h2>
+          <h2 class='sub-header slide-header__sub'>Jul 2010 - Feb 2015</h2>
         </header>
         <input checked='checked' class='thumbnail-radio' id='thumbnail-ym-1' name='yesman' type='radio'>
         <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-ym-1' style='background-image: url(./assets/img/slides/yesman/brands.png)'>
@@ -218,13 +241,11 @@
           </p>
         </div>
       </article>
-    </section>
-    <!-- Hillcrest Signs Section -->
-    <section class="section u-flex-center section--bg-fixed jobPage">
+      <!-- Hillcrest Signs Section -->
       <article class='slideshow'>
         <header class='slide-header'>
           <h1 class='header slide-header__main'>Hillcrest Signs</h1>
-          <h2 class='subheader slide-header__sub'>Jan 2008 - Jun 2010</h2>
+          <h2 class='sub-header slide-header__sub'>Jan 2008 - Jun 2010</h2>
         </header>
         <input checked='checked' class='thumbnail-radio' id='thumbnail-hs-1' name='hillcrest-signs' type='radio'>
         <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-hs-1' style='background-image: url(./assets/img/slides/hillcrest-signs/decals.png)'>
@@ -270,13 +291,11 @@
           </p>
         </div>
       </article>
-    </section>
-    <!-- Anupi Section -->
-    <section class="section u-flex-center section--bg-fixed jobPage">
+      <!-- Anupi Section -->
       <article class='slideshow'>
         <header class='slide-header'>
           <h1 class='header slide-header__main'>Anupi</h1>
-          <h2 class='subheader slide-header__sub'>Aug 2006 - Dec 2007</h2>
+          <h2 class='sub-header slide-header__sub'>Aug 2006 - Dec 2007</h2>
         </header>
         <input checked='checked' class='thumbnail-radio' id='thumbnail-anu-1' name='anupi' type='radio'>
         <label class='thumbnail thumbnail-1 direction-hover' for='thumbnail-anu-1' style='background-image: url(./assets/img/slides/anupi/shirts-faces.png)'>
@@ -311,9 +330,11 @@
           <span class='direction-hover__bottom' data-label='Storyboards'></span>
         </label>
         <img class='main-image' id='main-anu-1' src='./assets/img/slides/anupi/shirts-faces.png' alt='Abstract t-shirt design' />
-        <img class='main-image' id='main-anu-2' src='./assets/img/slides/anupi/shirts-abstract.png' alt='Abstract t-shirt design' />
+        <img class='main-image' id='main-anu-2' src='./assets/img/slides/anupi/shirts-abstract.png' alt='Abstract t-shirt design'
+        />
         <img class='main-image' id='main-anu-3' src='./assets/img/slides/anupi/cads.png' alt='Garment technical CADs' />
-        <img class='main-image' id='main-anu-4' src='./assets/img/slides/anupi/storyboards.jpg' alt='Clothing range storyboard presentations' />
+        <img class='main-image' id='main-anu-4' src='./assets/img/slides/anupi/storyboards.jpg' alt='Clothing range storyboard presentations'
+        />
         <div class='description'>
           <p class='description__slide'>
             I held a leading position in a team of young fashion designers in a newly established design department. Anupi was a clothing
@@ -324,12 +345,14 @@
     </section>
     <!-- About Me Page -->
     <section class="section u-flex-center aboutPage">
+      <h1 class="u-hidden">About Me</h1>
       <div class="col-lg-8 about">
         <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 proficiencies">
           <h1 class="about__header header">Proficiencies</h1>
           <ul class="proficiency-stats">
             <li class="proficiency-stats__stat">
-              <img class="profiency-stats__icon" src="./assets/img/program-icons/illustrator.png" title="Adobe Illustrator" alt="Adobe Illustrator Icon"/>
+              <img class="profiency-stats__icon" src="./assets/img/program-icons/illustrator.png" title="Adobe Illustrator" alt="Adobe Illustrator Icon"
+              />
               <div class="proficiency-stats__bar">
                 <div class="proficiency-stats__percentage-wrap">
                   <div class="proficiency-stats__percentage" style="transform: translateX(0)">100%</div>
@@ -338,7 +361,8 @@
             </li>
 
             <li class="proficiency-stats__stat">
-              <img class="profiency-stats__icon" src="./assets/img/program-icons/photoshop.png" title="Adobe Photoshop" alt="Adobe Photoshop Icon"/>
+              <img class="profiency-stats__icon" src="./assets/img/program-icons/photoshop.png" title="Adobe Photoshop" alt="Adobe Photoshop Icon"
+              />
               <div class="proficiency-stats__bar">
                 <div class="proficiency-stats__percentage-wrap">
                   <div class="proficiency-stats__percentage" style="transform: translateX(-10%)">90%</div>
@@ -347,7 +371,8 @@
             </li>
 
             <li class="proficiency-stats__stat">
-              <img class="profiency-stats__icon" src="./assets/img/program-icons/indesign.png" title="Adobe InDesign" alt="Adobe Indesign Icon"/>
+              <img class="profiency-stats__icon" src="./assets/img/program-icons/indesign.png" title="Adobe InDesign" alt="Adobe Indesign Icon"
+              />
               <div class="proficiency-stats__bar">
                 <div class="proficiency-stats__percentage-wrap">
                   <div class="proficiency-stats__percentage" style="transform: translateX(-20%)">80%</div>
@@ -373,7 +398,8 @@
               </div>
             </li>
             <li class="proficiency-stats__stat">
-              <img class="profiency-stats__icon" src="./assets/img/program-icons/javascript.png" title="JavaScript" alt="Javascript Icon"/>
+              <img class="profiency-stats__icon" src="./assets/img/program-icons/javascript.png" title="JavaScript" alt="Javascript Icon"
+              />
               <div class="proficiency-stats__bar">
                 <div class="proficiency-stats__percentage-wrap">
                   <div class="proficiency-stats__percentage" style="transform: translateX(-40%)">60%</div>
@@ -408,8 +434,7 @@
     </section>
     <!-- Footer Page -->
     <section class="section u-flex-center section--bg-fixed footerPage">
-      <h1 class="header text3d">Thanks For
-        <br/> Visiting</h1>
+      <h1 class="header text3d">Thanks For<br/> Visiting</h1>
       <img class="icon-smiley" src="./assets/img/backgrounds/smiley.png" alt="Smiley face" />
       <img class="doughnut" src="./assets/img/backgrounds/doughnut.png" alt="Doughnut illustration" />
       <div class="footerCopyright">
@@ -425,6 +450,8 @@
     </section>
   </main>
   <!-- SCRIPTS -->
+  <!-- Scripts -->
+  <script type="text/javascript" src="./assets/js/preloader.min.js"></script>
   <script type="text/javascript">
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;

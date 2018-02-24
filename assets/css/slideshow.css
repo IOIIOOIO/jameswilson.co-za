@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 10vh 0;
     transition: all 0.3s ease;
     perspective: 350px;
     perspective-origin: bottom left;
@@ -31,7 +32,7 @@
 .slide-header {
     display: flex;
     align-items: center;
-    margin-bottom: 0.6vw;
+    margin-bottom: 3vh;
     flex-direction: column;
 }
 
@@ -78,7 +79,6 @@
 }
 
 
-
 @media (min-width: 768px) {
     .slide-header__sub {
         margin-left: 1.2vw;
@@ -89,6 +89,8 @@
 .thumbnail-radio {
     display: none;
     position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 @supports (display: grid) {
