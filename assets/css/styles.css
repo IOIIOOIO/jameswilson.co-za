@@ -103,18 +103,29 @@ a:focus {
 }
 
 .landingPage {
-  background-image: url('../img/backgrounds/bg_landing.jpg');
+  background-color: red;
+  background-image: url(../img/backgrounds/french-stucco.png);
+  background-size: 400px;
   min-height: 100vh;
 }
 
+@media (min-width: 768px) {
+  .landingPage {
+    background-image: url('../img/backgrounds/bg_landing.jpg');
+    background-size: cover;
+  }
+}
+
 .jobPage {
-  background-image: url('../img/backgrounds/dust_scratches.png');
+  background-image: url('../img/backgrounds/handmadepaper.png');
   background-color: #e1e5e8;
+  background-size: 300px;
 }
 
 @media (min-width: 768px) {
   .jobPage {
     background-image: url('../img/backgrounds/bg-presentation.jpg');
+    background-size: cover;
   }
 }
 
@@ -166,8 +177,18 @@ a:focus {
 }
 
 .aboutPage {
-  background-image: url('../img/backgrounds/bg_about.png');
+  background-image: url(../img/backgrounds/beige_paper.png);
+  background-size: 300px;
 }
+
+
+@media (min-width: 768px) {
+  .aboutPage {
+    background-image: url('../img/backgrounds/bg_about.png');
+    background-size: cover;
+  }
+}
+
 
 .about {
   display: flex;
@@ -282,8 +303,17 @@ a:focus {
 }
 
 .footerPage {
-  background-image: url('../img/backgrounds/bg_footer.jpg');
+  background-color: #585858;
   min-height: 100vh;
+  background-image: url(../img/backgrounds/french-stucco.png);
+  background-size: 300px;
+}
+
+@media (min-width: 768px) {
+  .footerPage {
+    background-image: url('../img/backgrounds/bg_footer.jpg');
+    background-size: cover;
+  }
 }
 
 .footerPage h1 {
