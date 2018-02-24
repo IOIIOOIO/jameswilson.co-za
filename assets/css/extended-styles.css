@@ -1,15 +1,13 @@
 body {
-  font-family: 'lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: 'lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1.125rem;
   color: rgba(0, 0, 0, 0.6);
-  background-color: #111;
+  background-color: #111111;
 }
 
 @media (min-width: 1200px) {
   body {
     font-size: 1.167vw;
-    margin-bottom: 0;
   }
 }
 
@@ -22,8 +20,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 a {
@@ -40,34 +37,38 @@ a:focus {
   font-size: 3rem;
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: 1200px) {
   .header {
-      font-size: 4vw;
+    font-size: 3vw;
   }
 }
 
 @media (min-width: 1600px) {
   .header {
-      font-size: 3.2vw;
+    font-size: 2.8vw;
   }
 }
 
 .sub-header {
   font-size: 1.75rem;
   font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: 1200px) {
   .sub-header {
-      font-size: 2.33vw;
+    font-size: 2.33vw;
   }
 }
 
 @media (min-width: 1600px) {
   .sub-header {
-      font-size: 1.9vw;
+    font-size: 1.9vw;
   }
 }
 
@@ -79,6 +80,7 @@ a:focus {
 
 .section {
   padding: 50px 15px;
+  background-color: #ffffff;
   background-size: cover;
   position: relative;
 }
@@ -92,7 +94,6 @@ a:focus {
     padding: 50px 30px;
   }
 }
-
 
 @media (min-width: 1200px) {
   .section {
@@ -110,10 +111,6 @@ a:focus {
   background-image: url('../img/backgrounds/bg-presentation.jpg');
 }
 
-/* .main section.landingPage .landingPage-content {
-  height:100%;
-} */
-
 .landingPage h1 {
   text-align: center;
   color: rgb(255, 255, 255);
@@ -124,18 +121,18 @@ a:focus {
 }
 
 @media (min-width: 768px) {
-  .main section.landingPage h1 {
+  .section.landingPage h1 {
     font-size: 22vw;
   }
 }
 
 @media (min-width: 1200px) {
-  .main section.landingPage h1 {
+  .section.landingPage h1 {
     font-size: 17vw;
   }
 }
 
-.main section.landingPage h2 {
+.section.landingPage h2 {
   margin-top: 3%;
   color: rgb(255, 255, 255);
   font-weight: 500;
@@ -146,13 +143,13 @@ a:focus {
 }
 
 @media (min-width: 768px) {
-  .main section.landingPage h2 {
+  .section.landingPage h2 {
     font-size: 4vw;
   }
 }
 
 @media (min-width: 1200px) {
-  .main section.landingPage h2 {
+  .section.landingPage h2 {
     font-size: 2.3vw;
   }
 }
@@ -284,7 +281,7 @@ a:focus {
 }
 
 @media (min-width: 1200px) {
-  .main section.footerPage h1 {
+  .section.footerPage h1 {
     font-size: 10vw;
   }
 }
@@ -347,9 +344,15 @@ a:focus {
   color: rgb(58, 138, 207);
 }
 
+/* utilities */
+
 .u-flex-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.u-hidden {
+  display: none !important;
 }
